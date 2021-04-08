@@ -21,8 +21,10 @@ function App() {
             <Route path="/" exact component={Iniciosesion} />
             <Route path="/Registro" component={Registro} />
             <Route path="/MenuPrincipal" component={MenuPrincipal} />
+            <Route path="/Notificaciones" component={Notificaciones} />
 
-        </Switch>
+
+          </Switch>
 
       </Router>
 
