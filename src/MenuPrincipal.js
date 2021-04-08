@@ -31,7 +31,7 @@ function MenuPrincipal() {
                 <div className="registro">
                     <div className="insertar">
                         <p className="spacer"></p>
-                    <a href="notificaciones.html"><button className="boton">NOTIFICACIONES</button></a>
+                    <Link to="./Notificaciones"><button className="boton">NOTIFICACIONES</button></Link>
                     <p className="spacer"></p>
                     <Link to="./Reporte"><button className="boton">ENVIAR UN REPORTE</button></Link>
                     <p className="spacer"></p>
