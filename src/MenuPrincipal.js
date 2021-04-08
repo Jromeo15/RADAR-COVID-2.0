@@ -33,7 +33,7 @@ function MenuPrincipal() {
                         <p className="spacer"></p>
                     <a href="notificaciones.html"><button className="boton">NOTIFICACIONES</button></a>
                     <p className="spacer"></p>
-                    <a href="enviarUnReporte.html"><button className="boton">ENVIAR UN REPORTE</button></a>
+                    <Link to="./Reporte"><button className="boton">ENVIAR UN REPORTE</button></Link>
                     <p className="spacer"></p>
                         <Link to="/"><button className="boton">INICIO</button></Link>
                     </div>
