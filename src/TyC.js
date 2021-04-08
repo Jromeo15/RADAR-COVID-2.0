@@ -8,11 +8,11 @@ import {
     from "react-router-dom";
 import Registro from "./Registro";
 
-function Iniciosesion() {
+function TyC() {
     return (
 
 
-        <div className="Iniciosesion">
+        <div className="TyC">
 
             <div className="fondo">
                 <head>
@@ -53,4 +53,4 @@ function Iniciosesion() {
     );
 }
 
-export default Iniciosesion;
+export default TyC;
