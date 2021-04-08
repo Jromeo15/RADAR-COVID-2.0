@@ -15,8 +15,6 @@ function Iniciosesion() {
 
     <div className="Iniciosesion">
 
-
-
       <header className="App-header">
         <div className="title">
           <div className="titulo"><h1>Radar COVID</h1></div>
