@@ -13,6 +13,7 @@ import MenuPrincipal from "./MenuPrincipal";
 import Iniciosesion from "./Iniciosesion";
 import TyC from "./TyC";
 import Reporte from './Reporte';
+import Notificaciones from "./Notificaciones";
 
 function App() {
   return (
