@@ -41,7 +41,7 @@ function Alerta() {
 				<div className="cuadro">
 				<p>Atención, está a punto de enviar un informe al Ministerio de Sanidad. Sus datos serán enviados al servidor. ¿Está seguro de que desea continuar? </p>
 				<p className="spacer"></p>
-				<span className="cuadro"v><Link to="/MenuPrincipal">SÍ</Link></span>  <span className="cuadror"><Link to="/Reporte">NO</Link></span>
+				<span className="cuadrov"><Link to="/MenuPrincipal">SÍ</Link></span>  <span className="cuadror"><Link to="/Reporte">NO</Link></span>
 				<p className="spacer"></p>
 				</div>
 				<p className="spacer"></p>
