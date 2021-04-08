@@ -12,7 +12,6 @@ import Registro from "./Registro";
 import MenuPrincipal from "./MenuPrincipal";
 import Iniciosesion from "./Iniciosesion";
 
-
 function App() {
   return (
       <Router>
