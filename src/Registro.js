@@ -6,6 +6,7 @@ import {
 }
     from "react-router-dom";
 import MenuPrincipal from "./MenuPrincipal";
+import TyC from "./TyC";
 
 function Registro() {
     return (
@@ -34,7 +35,7 @@ function Registro() {
                         <p>*Correo electrónico <input type></input></p>
                         <p></p>
                         <p></p>
-                        <p>He <a href="TyC.html">leido</a> y acepto los términos y condiciones de servicio <input type="checkbox"></input></p>
+                        <p>He <Link to="./TyC">leido</Link> y acepto los términos y condiciones de servicio <input type="checkbox"></input></p>
                         <Link to="./MenuPrincipal">
                             <button className="boton">REGISTRARME</button>
                         </Link>

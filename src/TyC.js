@@ -19,31 +19,31 @@ function Iniciosesion() {
 
                     <title>Radar Covid</title>
 
+
                 </head>
 
                 <body>
 
+
                 <div className="title">
                     <div className="titulo"><h1>Radar COVID</h1></div>
                     <p className="spacer"></p>
-                    <div className=titulillo><h2>Menú pricipal</h2></div>
+                    <div className="titulillo"><h2>Términos y condiciones</h2></div>
                     <p className="spacer"></p>
 
                 </div>
                 <div className="registro">
                     <div className="insertar">
                         <p className="spacer"></p>
-                        <a href="notificaciones.html">
-                            <button className="boton">NOTIFICACIONES</button>
-                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <p className="spacer"></p>
-                        <a href="enviarUnReporte.html">
-                            <button className="boton">ENVIAR UN REPORTE</button>
-                        </a>
-                        <p className="spacer"></p>
-                        <a href="iniciosesion.html">
-                            <button className="boton">INICIO</button>
-                        </a>
+                        <Link to="./Registro">
+                            <button className="boton">Volver al registro</button>
+                        </Link>
 
                     </div>
                 </div>

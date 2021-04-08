@@ -7,6 +7,7 @@ import {
 }
 from "react-router-dom";
 import Registro from "./Registro";
+import MenuPrincipal from "./MenuPrincipal";
 
 function Iniciosesion() {
   return (
@@ -29,7 +30,7 @@ function Iniciosesion() {
             <p className="spacer"></p>
             <p>DNI <input type={"text"}></input></p>
             <p>Contraseña <input type></input></p>
-            <Link to ="MenuPrincipal.js">
+            <Link to ="./MenuPrincipal">
               <button className="boton">INICIAR SESIÓN</button>
             </Link>
             <p>--------------------------------------------------------------------------------------------------------------</p>
