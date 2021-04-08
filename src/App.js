@@ -12,6 +12,7 @@ import Registro from "./Registro";
 import MenuPrincipal from "./MenuPrincipal";
 import Iniciosesion from "./Iniciosesion";
 import TyC from "./TyC";
+import Reporte from './Reporte';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/Registro" component={Registro} />
             <Route path="/MenuPrincipal" component={MenuPrincipal} />
             <Route path="/Notificaciones" component={Notificaciones} />
+            <Route path="/Reporte" component={Reporte} />
             <Route path="/TyC" component={TyC} />
 
           </Switch>
