@@ -14,6 +14,7 @@ import Iniciosesion from "./Iniciosesion";
 import TyC from "./TyC";
 import Reporte from './Reporte';
 import Notificaciones from "./Notificaciones";
+import MenuPrincipalMinisterio from "./MenuPrincipalMinisterio";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
             <Route path="/Notificaciones" component={Notificaciones} />
             <Route path="/Reporte" component={Reporte} />
             <Route path="/TyC" component={TyC} />
+            <Route path="/MenuPrincipalMinisterio" component={MenuPrincipalMinisterio} />
+            <Route path="/ValidarReporte" component={ValidarReporte} />
 
           </Switch>
 
