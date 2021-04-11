@@ -26,6 +26,12 @@ function ValidarReporte() {
                     <p className="spacer"></p>
 
                 </div>
+                <nav className="menuCSS3">
+                    <ul>
+                        <li><Link to="/">Inicio</Link></li>
+                        <li><Link to="/MenuPrincipalMinisterio">Menú Principal</Link></li>
+                    </ul>
+                </nav>
                 <div className="reporte">
                     <div className="insertar">
                         <p className="spacer"></p>
@@ -41,9 +47,7 @@ function ValidarReporte() {
 
                         <p className="spacer"></p>
 
-                        <Link to="./MenuPrincipalMinisterio">
-                            <button className="boton">Volver al Menu Principal</button>
-                        </Link>
+
                     </div>
                 </div>
             </div>

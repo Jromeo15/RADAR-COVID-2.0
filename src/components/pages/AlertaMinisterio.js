@@ -31,7 +31,7 @@ function AlertaMinisterio() {
                         <Link to="/MenuPrincipalMinisterio"><button class="botonM">Menu principal</button></Link>
                         <p className="spacer"></p>
                         <div className="cuadro">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            <p className={"negro"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                                 reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
@@ -40,7 +40,7 @@ function AlertaMinisterio() {
                         </div>
                         <p className="spacer"></p>
                         <div className="cuadro">
-                            <p>¿Qué desea realizar con el reporte? </p>
+                            <p className={"negro"}>¿Qué desea realizar con el reporte? </p>
                             <p className="spacer"></p>
                             <span className="cuadrov"><Link to="/ValidarReporte">VALIDAR</Link></span>  <span className="cuadror"><Link to="/ValidarReporte">DESCARTAR</Link></span>
                             <p className="spacer"></p>
