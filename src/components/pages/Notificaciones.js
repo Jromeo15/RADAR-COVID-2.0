@@ -30,7 +30,7 @@ function Notificaciones() {
                     <div className="registro">
                         <div class="insertar">
                         <p class="spacer"></p>
-                        <Link to="./MenuPrincipal"><button class="botonM">Menu principal</button></Link>
+                        <Link to="/MenuPrincipal"><button class="botonM">Menu principal</button></Link>
                             <p class="spacer"></p>
                         <p>Bandeja de entrada de notificaciones sobre contactos con positivos:</p>
                     <div class="cuadro">
