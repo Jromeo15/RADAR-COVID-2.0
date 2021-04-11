@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import React from "react";
 import './App.css';
 import {
@@ -8,16 +7,13 @@ import {
   Link
 }
 from "react-router-dom";
-import Registro from "./Registro";
-import MenuPrincipal from "./MenuPrincipal";
-import Alerta from "./Alerta";
-import Iniciosesion from "./Iniciosesion";
-import TyC from "./TyC";
-import Reporte from './Reporte';
-import Notificaciones from "./Notificaciones";
-import MenuPrincipalMinisterio from "./MenuPrincipalMinisterio";
-import ValidarReporte from "./ValidarReporte";
-import AlertaMinisterio from "./AlertaMinisterio";
+import Registro from "./components/pages/Registro";
+import MenuPrincipal from "./components/pages/MenuPrincipal";
+import Alerta from "./components/pages/Alerta";
+import Iniciosesion from "./components/pages/Iniciosesion";
+import TyC from "./components/pages/TyC";
+import Reporte from './components/pages/Reporte';
+import Notificaciones from "./components/pages/Notificaciones";
 
 function App() {
   return (
