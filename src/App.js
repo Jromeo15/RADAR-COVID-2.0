@@ -14,6 +14,9 @@ import Iniciosesion from "./components/pages/Iniciosesion";
 import TyC from "./components/pages/TyC";
 import Reporte from './components/pages/Reporte';
 import Notificaciones from "./components/pages/Notificaciones";
+import MenuPrincipalMinisterio from "./components/pages/MenuPrincipalMinisterio";
+import ValidarReporte from './components/pages/ValidarReporte';
+import AlertaMinisterio from "./components/pages/AlertaMinisterio";
 
 function App() {
   return (
