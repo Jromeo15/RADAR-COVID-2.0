@@ -30,6 +30,7 @@ function ValidarReporte() {
                 <div className="reporte">
                     <div className="insertar">
                         <p className="spacer"></p>
+                        <p>Haga click en un reporte para verlo. Posteriormente podrá validarlo o descartarlo.</p>
                         <ul>
                             <Link to="/AlertaMinisterio"><button className="boton">Reporte 1</button></Link>
                             <p className="spacer"></p>

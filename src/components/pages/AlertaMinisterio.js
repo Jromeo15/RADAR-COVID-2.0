@@ -43,7 +43,7 @@ function AlertaMinisterio() {
                         <div className="cuadro">
                             <p>¿Qué desea realizar con el reporte? </p>
                             <p className="spacer"></p>
-                            <span className="cuadrov"><Link to="/MenuPrincipalMinisterio">VALIDAR</Link></span>  <span className="cuadror"><Link to="/ValidarReporte">DESCARTAR</Link></span>
+                            <span className="cuadrov"><Link to="/ValidarReporte">VALIDAR</Link></span>  <span className="cuadror"><Link to="/ValidarReporte">DESCARTAR</Link></span>
                             <p className="spacer"></p>
                         </div>
                         <p className="spacer"></p>
