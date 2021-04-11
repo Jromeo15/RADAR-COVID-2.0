@@ -6,14 +6,13 @@ import {
     Link
 }
     from "react-router-dom";
-import MenuPrincipalMinisterio from "./MenuPrincipalMinisterio";
+import Registro from "./Registro";
+import MenuPrincipalMinisterio from "./MenuPrincipal";
 
-function ValidarReporte() {
+function AlertaMinisterio() {
     return (
 
-
-        <div className="ValidarReporte">
-
+        <div className="AlertaMinisterio">
             <div className="fondo">
                 <head>
                     <title>Radar Covid</title>
@@ -27,29 +26,26 @@ function ValidarReporte() {
                     <p className="spacer"></p>
 
                 </div>
-                <div className="reporte">
+                <div className="registro">
                     <div className="insertar">
                         <p className="spacer"></p>
-                        <ul>
-                            <li>Reporte1 <Link to="/AlertaMinisterio"><button className="boton">VALIDAR/DESCARTAR</button></Link></li>
+                        <Link to="/MenuPrincipal"><button class="botonM">Menu principal</button></Link>
+                        <p className="spacer"></p>
+                        <div className="cuadro">
+                            <p>¿Qué desea realizar con el reporte? </p>
                             <p className="spacer"></p>
-                            <li>Reporte2 <Link to="/AlertaMinisterio"><button className="boton">VALIDAR/DESCARTAR</button></Link></li>
+                            <span className="cuadrov"><Link to="/MenuPrincipalMinisterio">VALIDAR</Link></span>  <span className="cuadror"><Link to="/ValidarReporte">DESCARTAR</Link></span>
                             <p className="spacer"></p>
-                            <li>Reporte3 <Link to="/AlertaMinisterio"><button className="boton">VALIDAR/DESCARTAR</button></Link></li>
-                            <p className="spacer"></p>
-
-                        </ul>
-
+                        </div>
                         <p className="spacer"></p>
 
-                        <Link to="./MenuPrincipal">
-                            <button className="boton">Volver al Menu Principal</button>
-                        </Link>
                     </div>
                 </div>
+
                 </body>
             </div>
         </div>
     );
 }
-export default ValidarReporte;
+
+export default AlertaMinisterio;

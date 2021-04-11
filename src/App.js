@@ -16,6 +16,8 @@ import TyC from "./TyC";
 import Reporte from './Reporte';
 import Notificaciones from "./Notificaciones";
 import MenuPrincipalMinisterio from "./MenuPrincipalMinisterio";
+import ValidarReporte from "./ValidarReporte";
+import AlertaMinisterio from "./AlertaMinisterio";
 
 function App() {
   return (
@@ -32,6 +34,7 @@ function App() {
             <Route path="/TyC" component={TyC} />
             <Route path="/MenuPrincipalMinisterio" component={MenuPrincipalMinisterio} />
             <Route path="/ValidarReporte" component={ValidarReporte} />
+            <Route path="/AlertaMinisterio" component={AlertaMinisterio} />
 
           </Switch>
 

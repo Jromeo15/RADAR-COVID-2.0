@@ -31,6 +31,8 @@ function Iniciosesion() {
             <Link to ="./MenuPrincipal">
               <button className="boton">INICIAR SESIÓN</button>
             </Link>
+            <p className="spacer"></p>
+
             <Link to ="./MenuPrincipalMinisterio">
               <button className="boton">INICIAR SESIÓN MINISTERIO</button>
             </Link>
