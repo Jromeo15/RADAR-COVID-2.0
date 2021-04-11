@@ -31,12 +31,11 @@ function ValidarReporte() {
                     <div className="insertar">
                         <p className="spacer"></p>
                         <ul>
-                            <li>Reporte1 <Link to="/AlertaMinisterio"><button className="boton">VALIDAR/DESCARTAR</button></Link></li>
+                            <Link to="/AlertaMinisterio"><button className="boton">Reporte 1</button></Link>
                             <p className="spacer"></p>
-                            <li>Reporte2 <Link to="/AlertaMinisterio"><button className="boton">VALIDAR/DESCARTAR</button></Link></li>
+                            <Link to="/AlertaMinisterio"><button className="boton">Reporte 2</button></Link>
                             <p className="spacer"></p>
-                            <li>Reporte3 <Link to="/AlertaMinisterio"><button className="boton">VALIDAR/DESCARTAR</button></Link></li>
-                            <p className="spacer"></p>
+                            <Link to="/AlertaMinisterio"><button className="boton">Reporte 3</button></Link>
 
                         </ul>
 
