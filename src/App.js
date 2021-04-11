@@ -10,6 +10,7 @@ import {
 from "react-router-dom";
 import Registro from "./Registro";
 import MenuPrincipal from "./MenuPrincipal";
+import Alerta from "./Alerta";
 import Iniciosesion from "./Iniciosesion";
 import TyC from "./TyC";
 import Reporte from './Reporte';
@@ -25,6 +26,7 @@ function App() {
             <Route path="/" exact component={Iniciosesion} />
             <Route path="/Registro" component={Registro} />
             <Route path="/MenuPrincipal" component={MenuPrincipal} />
+            <Route path="/Alerta" component={Alerta} />
             <Route path="/Notificaciones" component={Notificaciones} />
             <Route path="/Reporte" component={Reporte} />
             <Route path="/TyC" component={TyC} />

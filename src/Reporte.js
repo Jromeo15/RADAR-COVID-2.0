@@ -7,6 +7,7 @@ import {
 }
     from "react-router-dom";
 import Registro from "./Registro";
+import Alerta from "./Alerta";
 
 function Reporte() {
     return (
@@ -35,16 +36,15 @@ function Reporte() {
                 <div className="reporte">
                     <div className="insertar">
                         <p className="spacer"></p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <textarea name="Resumen" rows="5" cols="150"></textarea>
                         <p className="spacer"></p>
                         <Link to="./MenuPrincipal">
                             <button className="boton">Volver al Menu Principal</button>
                         </Link>
-
+                        <p className="spacer"></p>
+                        <Link to="/Alerta">
+                            <button className="boton">ENVIAR</button>
+                        </Link>
                     </div>
                 </div>
                 </body>
