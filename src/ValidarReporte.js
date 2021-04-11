@@ -42,7 +42,7 @@ function ValidarReporte() {
 
                         <p className="spacer"></p>
 
-                        <Link to="./MenuPrincipal">
+                        <Link to="./MenuPrincipalMinisterio">
                             <button className="boton">Volver al Menu Principal</button>
                         </Link>
                     </div>

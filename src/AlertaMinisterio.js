@@ -29,7 +29,7 @@ function AlertaMinisterio() {
                 <div className="registro">
                     <div className="insertar">
                         <p className="spacer"></p>
-                        <Link to="/MenuPrincipal"><button class="botonM">Menu principal</button></Link>
+                        <Link to="/MenuPrincipalMinisterio"><button class="botonM">Menu principal</button></Link>
                         <p className="spacer"></p>
                         <div className="cuadro">
                             <p>¿Qué desea realizar con el reporte? </p>
