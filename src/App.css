@@ -1,4 +1,14 @@
 
+.center{
+  text-align: center;
+}
+
+.ministerio{
+
+  display:block;
+  margin:auto;
+  height: 200px;
+}
 .title {
   background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
   border: solid blue;
@@ -21,6 +31,8 @@
   float:right;
 }
 .boton{
+  height: 100px;
+  width:300px;
   background:blue;
   -webkit-border-radius: 28px;
   -moz-border-radius: 28px;
@@ -126,7 +138,7 @@ blockquote {
 
 
 body {
-  background: url(./images/fondo.jpeg);
+  background-image: url(./images/fondo.jpeg);
   font-family: 'robotoregular';
   color: #190054;
   padding:5px;

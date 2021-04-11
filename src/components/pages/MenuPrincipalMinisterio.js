@@ -1,4 +1,4 @@
-
+import Ministerio from '../../images/Ministerio.png'
 import '../../App.css';
 import {
     BrowserRouter as Router,
@@ -28,6 +28,10 @@ function MenuPrincipalMinisterio() {
                     <p className="spacer"></p>
 
                 </div>
+                <p></p>
+                <img src ={Ministerio} alt={"Logo"} className={"ministerio"}/>
+
+                <p></p>
                 <div className="registro">
                     <div className="insertar">
                         <p className="spacer"></p>
