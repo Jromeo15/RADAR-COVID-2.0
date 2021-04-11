@@ -13,6 +13,7 @@ function ValidarReporte() {
 
 
         <div className="ValidarReporte">
+            <meta charSet="utf-8"></meta>
 
             <div className="fondo">
                 <head>

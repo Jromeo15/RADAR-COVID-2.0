@@ -29,6 +29,7 @@
 }
 .asterisco{
   float:right;
+  padding-right:5px;
 }
 .boton{
   height: 100px;
@@ -154,4 +155,40 @@ h1, h2 {
 ul {
   padding-left: 10px;
   margin: 2px 10px 2px 5px;
+}
+.menuCSS3 ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menuCSS3 a {
+  display: block;
+  padding: 2em;
+  background-image: -webkit-linear-gradient(top, #000f8a, #2079b0);
+  border: solid blue;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menuCSS3 ul li ul {
+  display: none;
+}
+.margen1{
+  margin-right: 43px;
+}
+.margen2{
+  margin-right: 9px;
+}
+.margen3{
+  margin-right: 19px;
+}
+.margen4{
+  margin-right: 17px;
+}
+fieldset{
+  background-color: rgba(3, 11, 41, .2);
+  margin:300px;
+  margin-top: 7px;
+  margin-bottom: 1.5px;
 }

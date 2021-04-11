@@ -26,9 +26,11 @@ function Iniciosesion() {
       </header>
         <div className="registro">
           <div className="insertar">
+            <fieldset>
+              <div className={"fieldfondo"}>
             <p className="spacer"></p>
-            <p>DNI <input type={"text"}></input></p>
-            <p>Contraseña <input type></input></p>
+            <p>DNI <input type={"text"} placeholder="Introduzca su DNI" ></input></p>
+            <p className={"margen1"}>Contraseña <input placeholder="Introduzca su contraseña"></input></p>
             <Link to ="./MenuPrincipal">
               <button className="boton">INICIAR SESIÓN</button>
             </Link>
@@ -37,10 +39,11 @@ function Iniciosesion() {
             <Link to ="./MenuPrincipalMinisterio">
               <button className="boton">INICIAR SESIÓN MINISTERIO</button>
             </Link>
-            <p>--------------------------------------------------------------------------------------------------------------</p>
+            <p>-----------------------------------------------------------------------------------------------------------------------</p>
             <p className="spacer"></p>
             <p>¿No tienes cuenta? <Link to ="./Registro">Regístrate</Link></p>
-
+              </div>
+            </fieldset>
           </div>
         </div>
 

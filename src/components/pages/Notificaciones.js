@@ -27,11 +27,16 @@ function Notificaciones() {
                 <p class="spacer"></p>
 
                     </div>
+                    <nav className="menuCSS3">
+                        <ul>
+                            <li><Link to="/">Inicio</Link></li>
+                            <li><Link to="/MenuPrincipal">Menú Principal</Link></li>
+                            <li><Link to="/Reporte">Reporte</Link></li>
+                        </ul>
+                    </nav>
                     <div className="registro">
                         <div class="insertar">
                         <p class="spacer"></p>
-                        <Link to="/MenuPrincipal"><button class="botonM">Menu principal</button></Link>
-                            <p class="spacer"></p>
                         <p>Bandeja de entrada de notificaciones sobre contactos con positivos:</p>
                     <div class="cuadro">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

@@ -29,12 +29,15 @@ function Registro() {
                 </div>
                 <div className="registro">
                     <div className="insertar">
-                        <p>Introduce tu DNI <input type></input></p>
-                        <p>Crea tu contraseña <input type></input></p>
-                        <p>repite tu contraseña <input type></input></p>
-                        <p>*Correo electrónico <input type></input></p>
+                        <fieldset>
+                            <div className={"fieldfondo"}>
                         <p></p>
+                        <p>Introduce tu DNI <input type placeholder="Introduzca su DNI"></input></p>
+                        <p className={"margen2"}>Crea tu contraseña <input type placeholder="Introduzca una contraseña"></input></p>
+                        <p className={"margen3"}>Repite tu contraseña <input type placeholder="Reintroduzca su contraseña"></input></p>
+                        <p className={"margen4"}>*Correo electrónico <input type placeholder="Introduzca su email"></input></p>
                         <p></p>
+
                         <p>He <Link to="./TyC">leido</Link> y acepto los términos y condiciones de servicio <input type="checkbox"></input></p>
                         <Link to="/MenuPrincipal">
                             <button className="boton">REGISTRARME</button>
@@ -42,9 +45,11 @@ function Registro() {
                         <p></p>
                         <p>
                             <div className="asterisco">*Escriba su correo solo si quiere recibir información y avisos en
-                                su email
+                                su email.
                             </div>
                         </p>
+                            </div>
+                        </fieldset>
                     </div>
                 </div>
 

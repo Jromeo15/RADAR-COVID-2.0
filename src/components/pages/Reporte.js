@@ -31,13 +31,21 @@ function Reporte() {
 
                 </div>
                 <div className="reporte">
+                    <nav className="menuCSS3">
+                        <ul>
+                            <li><Link to="/">Inicio</Link></li>
+                            <li><Link to="/MenuPrincipal">Menú Principal</Link></li>
+                            <li><Link to="/Notificaciones">Notificaciones</Link></li>
+                        </ul>
+                    </nav>
+
                     <div className="insertar">
+                        <p></p>
+                        <p>Escriba aquí cualquier información que quiera aportar al reporte.</p>
+                        <p></p>
                         <p className="spacer"></p>
                         <textarea name="Resumen" rows="5" cols="150"></textarea>
                         <p className="spacer"></p>
-                        <Link to="./MenuPrincipal">
-                            <button className="boton">Volver al Menu Principal</button>
-                        </Link>
                         <p className="spacer"></p>
                         <Link to="/Alerta">
                             <button className="boton">ENVIAR</button>
