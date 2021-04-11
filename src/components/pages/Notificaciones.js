@@ -12,7 +12,7 @@ import Iniciosesion from "./Iniciosesion";
 function Notificaciones() {
     return (
         <div className="Notificaciones">
-            <body>
+
                 <div className="fondo">
                     <head>
 
@@ -39,7 +39,7 @@ function Notificaciones() {
                     </div>
                     </div>
                 </div>
-            </body>
+
         </div>
 );
 }

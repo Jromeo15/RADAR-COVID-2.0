@@ -19,7 +19,7 @@ function Registro() {
 
                 </head>
 
-                <body>
+
                 <div className="title">
                     <div className="titulo"><h1>Radar COVID</h1></div>
                     <p className="spacer"></p>
@@ -47,7 +47,7 @@ function Registro() {
                         </p>
                     </div>
                 </div>
-                </body>
+
             </div>
         </div>
     );

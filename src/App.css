@@ -10,7 +10,7 @@
   height: 200px;
 }
 .title {
-  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -webkit-linear-gradient(top, #000f8a, #2079b0);
   border: solid blue;
 
 }
@@ -123,7 +123,7 @@
 
 
 a {
-  color: #124d36;
+  color: #30cb94;
   text-decoration: none;
 }
 
@@ -140,7 +140,7 @@ blockquote {
 body {
   background-image: url(./images/fondo2.jpg);
   font-family: 'robotoregular';
-  color: #190054;
+  color: #ffffff;
   padding:5px;
 }
 

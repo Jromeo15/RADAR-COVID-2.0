@@ -13,13 +13,9 @@ function MenuPrincipalMinisterio() {
     return (
         <div className="MenuPrincipalMinisterio">
             <div className="fondo">
-                <head>
 
-                    <title>Radar Covid</title>
 
-                </head>
-
-                <body>
+                <header className="App-header">
 
                 <div className="title">
                     <div className="titulo"><h1>Radar COVID</h1></div>
@@ -28,6 +24,8 @@ function MenuPrincipalMinisterio() {
                     <p className="spacer"></p>
 
                 </div>
+                </header>
+
                 <p></p>
                 <img src ={Ministerio} alt={"Logo"} className={"ministerio"}/>
 
@@ -41,7 +39,7 @@ function MenuPrincipalMinisterio() {
                     </div>
 
                 </div>
-                </body>
+
             </div>
         </div>
     );

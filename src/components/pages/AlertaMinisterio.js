@@ -18,7 +18,6 @@ function AlertaMinisterio() {
                     <title>Radar Covid</title>
                 </head>
 
-                <body>
                 <div className="title">
                     <div className="titulo"><h1>Radar COVID</h1></div>
                     <p className="spacer"></p>
@@ -51,7 +50,7 @@ function AlertaMinisterio() {
                     </div>
                 </div>
 
-                </body>
+
             </div>
         </div>
     );

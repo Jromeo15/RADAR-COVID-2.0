@@ -23,6 +23,7 @@ function Iniciosesion() {
           <p className="spacer"></p>
 
         </div>
+      </header>
         <div className="registro">
           <div className="insertar">
             <p className="spacer"></p>
@@ -42,7 +43,7 @@ function Iniciosesion() {
 
           </div>
         </div>
-      </header>
+
     </div>
   );
 }

@@ -23,9 +23,6 @@ function Reporte() {
 
                 </head>
 
-                <body>
-
-
                 <div className="title">
                     <div className="titulo"><h1>Radar COVID</h1></div>
                     <p className="spacer"></p>
@@ -47,7 +44,6 @@ function Reporte() {
                         </Link>
                     </div>
                 </div>
-                </body>
             </div>
         </div>
     );

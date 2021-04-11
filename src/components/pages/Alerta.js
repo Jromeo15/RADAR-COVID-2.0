@@ -22,7 +22,7 @@ function Alerta() {
 
 </head>
 
-<body>
+
 	
 	
    
@@ -49,7 +49,7 @@ function Alerta() {
 			</div>
 		</div>
 
-</body>
+
 </div>
     </div>
   );

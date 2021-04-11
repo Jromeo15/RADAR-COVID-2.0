@@ -22,7 +22,7 @@ function TyC() {
 
                 </head>
 
-                <body>
+
 
 
                 <div className="title">
@@ -47,7 +47,7 @@ function TyC() {
 
                     </div>
                 </div>
-                </body>
+
             </div>
         </div>
     );
