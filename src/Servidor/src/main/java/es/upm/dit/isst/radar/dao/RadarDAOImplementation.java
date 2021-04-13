@@ -33,7 +33,7 @@ public class RadarDAOImplementation implements RadarDAO{
 	
 			  session.beginTransaction();
 	
-			  Usuario usuario = null;
+			  usuario = null;
 			  // operaciones
 	
 			  session.getTransaction().commit();
