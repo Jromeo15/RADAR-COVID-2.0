@@ -9,18 +9,17 @@ import es.upm.dit.isst.radar.model.RegistroInfectados;
 import es.upm.dit.isst.radar.model.Usuario;
 import es.upm.dit.isst.radar.dao.SessionFactoryService;
 
-public class RadarDAOImplementation implements RadarDAO {
+public class RegistroInfectadosDAOImplementation implements RegistroInfectadosDAO {
 
-	private static RadarDAOImplementation instancia = null;
+	private static RegistroInfectadosDAOImplementation instancia = null;
 
-	private RadarDAOImplementation() {
+	private RegistroInfectadosDAOImplementation() {
 	}
 
-	public static RadarDAOImplementation getInstance() {
+	public static RegistroInfectadosDAOImplementation getInstance() {
 		if (null == instancia)
-			instancia = new RadarDAOImplementation();
+			instancia = new RegistroInfectadosDAOImplementation();
 		return instancia;
-
 	}
 
 	@Override
@@ -34,11 +33,6 @@ public class RadarDAOImplementation implements RadarDAO {
 		return usuario;
 	}
 
-	@Override
-	public RegistroInfectados create(RegistroInfectados registroInfectados) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	@Override
 	public Usuario read(String email) {
@@ -50,6 +44,7 @@ public class RadarDAOImplementation implements RadarDAO {
 		return usuario;
 	}
 
+	
 	@Override
 	public Usuario update(Usuario usuario) {
 		Session session = SessionFactoryService.get().openSession();
@@ -60,6 +55,7 @@ public class RadarDAOImplementation implements RadarDAO {
 		return usuario;
 	}
 
+	
 	@Override
 	public Usuario delete(Usuario usuario) {
 		Session session = SessionFactoryService.get().openSession();
@@ -70,6 +66,7 @@ public class RadarDAOImplementation implements RadarDAO {
 		return usuario;
 	}
 
+	
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Usuario> readAll() {
@@ -82,14 +79,37 @@ public class RadarDAOImplementation implements RadarDAO {
 		return usuarios;
 	}
 
+
 	@Override
-	public List<Usuario> readAll(int DNI) {
-		List<Usuario> res = new ArrayList<Usuario>();
-		/*
-		 * for (Usuario usuario : this.readAll()) if
-		 * (usuario.getAdvisor().equals(professor)) res.add(usuario);
-		 */
-		return res;
+	public Usuario read(int DNI) {
+		Session session = SessionFactoryService.get().openSession();
+		session.beginTransaction();
+		Usuario usuario = session.get(Usuario.class, DNI);
+		session.getTransaction().commit();
+		session.close();
+		return usuario;
+	}
+
+	
+	@Override
+	public Usuario read_1(String password) {
+		Session session = SessionFactoryService.get().openSession();
+		session.beginTransaction();
+		Usuario usuario = session.get(Usuario.class, password);
+		session.getTransaction().commit();
+		session.close();
+		return usuario;
+	}
+
+	
+	@Override
+	public Usuario read_2(String key) {
+		Session session = SessionFactoryService.get().openSession();
+		session.beginTransaction();
+		Usuario usuario = session.get(Usuario.class, key);
+		session.getTransaction().commit();
+		session.close();
+		return usuario;
 	}
 
 }
