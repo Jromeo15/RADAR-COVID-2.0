@@ -1,3 +1,4 @@
+
 import '../../App.css';
 import {
     BrowserRouter as Router,
@@ -32,9 +33,9 @@ function Registro() {
                         <fieldset>
                             <div className={"fieldfondo"}>
                         <p></p>
-                        <p>Introduce tu DNI <input type placeholder="Introduzca su DNI"></input></p>
-                        <p className={"margen2"}>Crea tu contraseña <input type placeholder="Introduzca una contraseña"></input></p>
-                        <p className={"margen3"}>Repite tu contraseña <input type placeholder="Reintroduzca su contraseña"></input></p>
+                        <p>Introduce tu DNI <input type={"text"} id={"DNI"} name={"DNI"} placeholder="Introduzca su DNI"></input></p>
+                        <p className={"margen2"}>Crea tu contraseña <input type={"password"} id={"password"} name={"password"} placeholder="Introduzca una contraseña"></input></p>
+                        <p className={"margen3"}>Repite tu contraseña <input type={"password"} id={"password"} name={"password"} placeholder="Reintroduzca su contraseña"></input></p>
                         <p className={"margen4"}>*Correo electrónico <input type placeholder="Introduzca su email"></input></p>
                         <p></p>
 
