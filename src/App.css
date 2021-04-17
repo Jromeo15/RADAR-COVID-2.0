@@ -189,6 +189,17 @@ ul {
 fieldset{
   background-color: rgba(3, 11, 41, .2);
   margin:300px;
-  margin-top: 7px;
+  margin-top: 40px;
   margin-bottom: 1.5px;
+}
+.notf{
+  text-align: left;
+  color: black;
+}
+.cuadronotf{
+  border:solid blue;
+  background-color: white;
+  padding: 5px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
