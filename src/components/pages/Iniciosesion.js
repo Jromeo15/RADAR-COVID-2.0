@@ -31,24 +31,24 @@ function Iniciosesion() {
                 </div>
             </header>
             <fieldset>
-            <div className="registro">
-                <div className="insertar">
-                    <p className="spacer"></p>
-                    <p>DNI <input type={"text"} onChange={dni}></input></p>
-                    <p className={"margen1"}>Contraseña <input type onChange={pass}></input></p>
+                <div className="registro">
+                    <div className="insertar">
+                        <p className="spacer"></p>
+                        <p>DNI <input type={"text"} onChange={dni}></input></p>
+                        <p className={"margen1"}>Contraseña <input type onChange={pass}></input></p>
 
-                        <button className="boton" onClick={login}>INICIAR SESIÓN</button>
+                            <button className="boton" onClick={login}>INICIAR SESIÓN</button>
 
-                    <p className="spacer"></p>
+                        <p className="spacer"></p>
 
 
-                    <p>--------------------------------------------------------------------------------------------------------------</p>
-                    <p className="spacer"></p>
-                    <p>¿No tienes cuenta? <Link to ="./Registro">Regístrate</Link></p>
+                        <p>--------------------------------------------------------------------------------------------------------------</p>
+                        <p className="spacer"></p>
+                        <p>¿No tienes cuenta? <Link to ="./Registro">Regístrate</Link></p>
 
+                    </div>
                 </div>
-            </div>
-</fieldset>
+            </fieldset>
         </div>
     );
 }

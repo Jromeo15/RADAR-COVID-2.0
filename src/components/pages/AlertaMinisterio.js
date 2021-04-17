@@ -27,9 +27,13 @@ function AlertaMinisterio() {
                 </div>
                 <div className="registro">
                     <div className="insertar">
-                        <p className="spacer"></p>
-                        <Link to="/MenuPrincipalMinisterio"><button class="botonM">Menu principal</button></Link>
-                        <p className="spacer"></p>
+                        <nav className="menuCSS3">
+                            <ul>
+                                <li><Link to="/">Inicio</Link></li>
+                                <li><Link to="/MenuPrincipalMinisterio">Menú Principal</Link></li>
+                            </ul>
+                        </nav>
+                        <p></p>
                         <div className="cuadro">
                             <p className={"negro"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
