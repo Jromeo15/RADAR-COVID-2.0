@@ -40,7 +40,7 @@ function Registro() {
                         <p></p>
 
                         <p>He <Link to="./TyC">leido</Link> y acepto los términos y condiciones de servicio <input type="checkbox"></input></p>
-                        <Link to="/MenuPrincipal">
+                        <Link to="/">
                             <button className="boton">REGISTRARME</button>
                         </Link>
                         <p></p>
