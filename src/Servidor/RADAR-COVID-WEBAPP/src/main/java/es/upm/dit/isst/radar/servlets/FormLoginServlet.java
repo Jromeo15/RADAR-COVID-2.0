@@ -26,7 +26,7 @@ public class FormLoginServlet extends HttpServlet {
 	private final String ADMIN_DNI = "root";
     private final String ADMIN_PASSWORD = "root"; 
        
-
+//No borrar esto mas
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
                        throws ServletException, IOException {
