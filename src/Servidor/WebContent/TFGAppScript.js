@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     $.ajax({
 
-        url: '/TFG-SERVICE/rest/TFGs',
+        url: '/RADAR-COVID/rest/datos',
 
         type: 'get',
 
@@ -16,31 +16,23 @@ $(document).ready(function(){
 
                 var email = response[i].email;
 
-                var name = response[i].name;
+                var DNI = response[i].DNI;
 
-                var title = response[i].title;
+                var contraseña = response[i].contraseña;
 
-                var status = response[i].status;
+
 
                 var document = response[i].document;
 
-                var mark = response[i].mark;
-
-                var advisor = response[i].advisor;
 
                 var tr_str = "<tr>" +
 
                     "<td align='center'>" + email + "</td>" +
 
-                    "<td align='center'>" + name + "</td>" +
+                    "<td align='center'>" + DNI + "</td>" +
 
-                    "<td align='center'>" + title + "</td>" +
+                    "<td align='center'>" + contraseña + "</td>" +
 
-                    "<td align='center'>" + status + "</td>" +
-
-                    "<td align='center'>" + mark + "</td>" +
-
-                    "<td align='center'>" + advisor + "</td>" +
 
                     "</tr>";
 
