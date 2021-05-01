@@ -1,4 +1,4 @@
-package es.upm.dit.isst.tfg.servlets;
+package es.upm.dit.isst.radar.servlets;
 
 import java.io.IOException;
 
@@ -15,7 +15,7 @@ import javax.ws.rs.core.Response;
 
 import org.glassfish.jersey.client.ClientConfig;
 
-import es.upm.dit.isst.tfg.model.TFG;
+import es.upm.dit.isst.radar.model.*;
 
 @WebServlet("/FormCreaTFGServlet")
 public class FormCreaTFGServlet extends HttpServlet {
@@ -23,9 +23,9 @@ public class FormCreaTFGServlet extends HttpServlet {
        
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-	        String advisorEmail = req.getParameter("profesor");
-	        if (advisorEmail.indexOf("upm.es") > 0) {
-	                TFG tfg = new TFG();
+	       
+	        
+	                RegistroInfectados reporte= new RegistroInfectados();
 	                tfg.setEmail(req.getParameter("email"));
 	                tfg.setMark(-1.0);
 	                tfg.setStatus(1);
@@ -42,7 +42,7 @@ public class FormCreaTFGServlet extends HttpServlet {
 	                              .forward(req, resp);
 	                        return;
 	                }
-	        }        
+	               
 	        getServletContext().getRequestDispatcher("/index.html").forward(req, resp);
 	}
 }

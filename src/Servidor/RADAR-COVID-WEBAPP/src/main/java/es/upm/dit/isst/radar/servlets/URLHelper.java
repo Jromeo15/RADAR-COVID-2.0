@@ -1,4 +1,4 @@
-package es.upm.dit.isst.tfg.servlets;
+package es.upm.dit.isst.radar.servlets;
 
 public class URLHelper {
 
