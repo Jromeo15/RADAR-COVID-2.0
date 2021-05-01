@@ -6,7 +6,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>RADAR-COVID</groupId>
+  <groupId>RADAR-COVID-SERVICE</groupId>
 
   <artifactId>RADAR-COVID-SERVICE</artifactId>
 
