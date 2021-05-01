@@ -15,7 +15,7 @@ public class RegistroInfectados {
 	private Date Fecha;
 	@Id
 	private String Clave;
-	private int DNI;
+	private String DNI;
 	
 
 	public RegistroInfectados() {
@@ -38,11 +38,11 @@ public class RegistroInfectados {
 		Clave = clave;
 	}
 
-	public int getDNI() {
+	public String getDNI() {
 		return DNI;
 	}
 
-	public void setDNI(int dNI) {
+	public void setDNI(String dNI) {
 		DNI = dNI;
 	}
 

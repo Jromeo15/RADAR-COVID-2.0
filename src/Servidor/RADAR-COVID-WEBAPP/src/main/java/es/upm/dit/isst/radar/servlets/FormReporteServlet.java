@@ -18,20 +18,16 @@ import org.glassfish.jersey.client.ClientConfig;
 import es.upm.dit.isst.radar.model.*;
 
 @WebServlet("/FormCreaTFGServlet")
-public class FormCreaTFGServlet extends HttpServlet {
+public class FormReporteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	       
-	        
+	        		
 	                RegistroInfectados reporte= new RegistroInfectados();
-	                tfg.setEmail(req.getParameter("email"));
-	                tfg.setMark(-1.0);
-	                tfg.setStatus(1);
-	                tfg.setName(req.getParameter("name"));
-	                tfg.setTitle(req.getParameter("titulo"));
-	                tfg.setAdvisor(advisorEmail);                                        
+	                reporte.setDNI(req.getParameter("DNI"));
+	                                            
 	                Client client = ClientBuilder.newClient(new ClientConfig());
 	               Response r = client.target(URLHelper.getURL()).request()
 	                        .post(Entity.entity(tfg, MediaType.APPLICATION_JSON)
