@@ -1,4 +1,4 @@
-package es.upm.dit.isst.radar.servlets;
+/*package es.upm.dit.isst.radar.servlets;
 
 import java.io.IOException;
 import java.util.List;
@@ -19,9 +19,7 @@ import org.glassfish.jersey.client.ClientConfig;
 
 import es.upm.dit.isst.tfg.model.TFG;
 
-/**
- * Servlet implementation class FormProfesorServlet
- */
+
 @WebServlet("/FormProfesorServlet")
 public class FormProfesorServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -55,4 +53,4 @@ public class FormProfesorServlet extends HttpServlet {
 	  }
 	  getServletContext().getRequestDispatcher("/Professor.jsp").forward(req,resp);
 	}     
-}
+}*/

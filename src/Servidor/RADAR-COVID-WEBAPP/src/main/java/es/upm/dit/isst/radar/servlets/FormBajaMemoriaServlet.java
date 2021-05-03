@@ -13,7 +13,8 @@ import javax.ws.rs.core.MediaType;
 
 import org.glassfish.jersey.client.ClientConfig;
 
-import es.upm.dit.isst.tfg.model.TFG;
+import es.upm.dit.isst.radar.model.*;
+
 
 /**
  * Servlet implementation class FormBajaMemoriaServlet
@@ -40,19 +41,19 @@ public class FormBajaMemoriaServlet extends HttpServlet {
 
       // autorizacion: any
 
-      String email = req.getParameter("tfgemail");
+      String DNI = req.getParameter("DNI");
 
       Client client = ClientBuilder.newClient(new ClientConfig());
 
-      TFG tfg = null;
+      RegistroInfectados reporte = null;
 
-      try {   tfg=client.target(URLHelper.getURL()+"/"+ email)
+      try {   reporte=client.target(URLHelper.getURL()+"/"+ DNI)
 
-          .request().accept(MediaType.APPLICATION_JSON).get(TFG.class);
+          .request().accept(MediaType.APPLICATION_JSON).get(RegistroInfectados.class);
 
       }catch(Exception e) {}
 
-      if ((tfg != null)  && (tfg.getDocument() != null)){
+      if ((reporte != null)  && (reporte.getDNI() != null)){
 
         resp.setContentType("application/pdf");
 
@@ -60,9 +61,9 @@ public class FormBajaMemoriaServlet extends HttpServlet {
 
               , String.format("attachment; filename=\"%s\"", "memoria.pdf"));
 
-        resp.setContentLength(tfg.getDocument().length);
+       // resp.setContentLength(reporte.getDocument().length);
 
-        resp.getOutputStream().write(tfg.getDocument());
+        // resp.getOutputStream().write(reporte.getDocument());
 
       }
 

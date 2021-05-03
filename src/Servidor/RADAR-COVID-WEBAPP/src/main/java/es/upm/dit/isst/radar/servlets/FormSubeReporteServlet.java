@@ -19,12 +19,12 @@ import javax.ws.rs.core.Response;
 
 import org.glassfish.jersey.client.ClientConfig;
 
-import es.upm.dit.isst.tfg.model.TFG;
+import es.upm.dit.isst.radar.model.*;
 
 @WebServlet("/FormSubeMemoriaServlet")
 
 @MultipartConfig
-public class FormSubeMemoriaServlet extends HttpServlet {
+public class FormSubeReporteServlet extends HttpServlet {
 
   private static final long serialVersionUID = 1L;
 
@@ -37,23 +37,23 @@ public class FormSubeMemoriaServlet extends HttpServlet {
 
     // autorizacion, comprobar
 
-    String email = req.getParameter("tfgemail");
+    String DNI = req.getParameter("dni");
 
     Client client = ClientBuilder.newClient(new ClientConfig());
 
-    TFG tfg = null;
+    RegistroInfectados reporte = null;
 
     try {
 
-         tfg = client.target(URLHelper.getURL() + "/" + email)
+         reporte = client.target(URLHelper.getURL() + "/" + DNI)
 
-           .request().accept(MediaType.APPLICATION_JSON).get(TFG.class);
+           .request().accept(MediaType.APPLICATION_JSON).get(RegistroInfectados.class);
 
     } catch(Exception e) {}
 
     // autorizacion
 
-    if ((tfg != null) && (tfg.getStatus() == 3)) {
+    if (reporte != null) {
 
          Part filePart = req.getPart("file");
 
@@ -67,19 +67,17 @@ public class FormSubeMemoriaServlet extends HttpServlet {
 
                  output.write(buffer, 0, length);
 
-         tfg.setDocument(output.toByteArray());
+        // reporte.setDocument(output.toByteArray());
 
-         tfg.setStatus(4);
+        client.target(URLHelper.getURL() + "/" + reporte.getDNI()).request()
 
-        client.target(URLHelper.getURL() + "/" + tfg.getEmail()).request()
+                 .post(Entity.entity(reporte, MediaType.APPLICATION_JSON), Response.class);
 
-                 .post(Entity.entity(tfg, MediaType.APPLICATION_JSON), Response.class);
-
-         req.setAttribute("tfg", tfg);
+         req.setAttribute("reporte", reporte);
 
      }
 
-    getServletContext().getRequestDispatcher("/TFG.jsp").forward(req,resp);
+    getServletContext().getRequestDispatcher("/reporte.jsp").forward(req,resp);
 
   }
 
