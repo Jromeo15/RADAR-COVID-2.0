@@ -2,23 +2,21 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Bienvenido a la gestión de TFGs</title>
+<title>RADAR-COVID</title>
 </head>
 <body>
-	<h2>Acceso</h2>
-	<form action="FormLoginServlet">
-		<input type="text" name="email" placeholder="Email"> 
+	<h2>Login</h2>
+	<form action="FormRegistroServlet">
+		<input type="text" name="DNI" placeholder="DNI"> 
 		<input type="password" name="password" placeholder="Password">
 		<button type="submit">Login</button>
 	</form>
-	<h2>Solicitud de TFG</h2>
-<form action="FormCreaTFGServlet">
+	<h2>Registro</h2>
+	<form action="FormLoginServlet">
+		<input type="text" name="DNI" placeholder="DNI">
+		<input type="password" id="password" name="password" placeholder="Password">
         <input type="email" id="email" name="email" placeholder="Email">
-        <input type="password" id="password" name="password" placeholder="Password">
-        <input type="text" id="name" name="name" placeholder="Nombre y apellidos">
-        <input type="text" id="titulo" name="titulo" placeholder="Título del proyecto">
-        <input type="email" id="profesor" name="profesor" placeholder="Profesor tutor">
-        <button type="submit">Registrar</button>
+        <button type="submit">Registrarse</button>
 </form>
 </body>
 </html>
