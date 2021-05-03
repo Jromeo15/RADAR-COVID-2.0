@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Bienvenido Profesor</title>
+<title>Bienvenido Ministerio</title>
 </head>
 <body>
 
