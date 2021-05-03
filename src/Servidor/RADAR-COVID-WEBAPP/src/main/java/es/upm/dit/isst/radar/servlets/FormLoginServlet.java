@@ -38,10 +38,10 @@ public class FormLoginServlet extends HttpServlet {
         // autenticacion1
         if( ADMIN_DNI.equals(DNI) && ADMIN_PASSWORD.equals(password) ) {        
              req.getSession().setAttribute("admin", true);
-             List<Usuario> usuarios  = client.target(URLHelper.getURL())
+             /*List<Usuario> usuarios  = client.target(URLHelper.getURL())
                     .request().accept(MediaType.APPLICATION_JSON)
                     .get(new GenericType<List<Usuario>>() {});
-             req.setAttribute("usuarios", usuarios);
+             req.setAttribute("usuarios", usuarios);*/
            getServletContext().getRequestDispatcher("/Admin.jsp").forward(req,resp);
             return;
         }
@@ -65,7 +65,7 @@ public class FormLoginServlet extends HttpServlet {
         }
         if ( null != usuario ) {
                 req.getSession().setAttribute("usuario", usuario);
-                getServletContext().getRequestDispatcher("/TFG.jsp").forward(req,resp);
+                getServletContext().getRequestDispatcher("/Hola.jsp").forward(req,resp);
                 return;
         }
         getServletContext().getRequestDispatcher("/index.html").forward(req,resp);
