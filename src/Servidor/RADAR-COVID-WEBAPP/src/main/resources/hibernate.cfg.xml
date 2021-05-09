@@ -14,5 +14,6 @@
                 <property name="show_sql">true</property>
                 <property name="hbm2ddl.auto">update</property>
                 <mapping class="es.upm.dit.isst.radar.model.Usuario" />
+                <mapping class="es.upm.dit.isst.radar.model.RegistroInfectados" />
         </session-factory>
 </hibernate-configuration>

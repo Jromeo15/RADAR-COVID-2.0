@@ -17,26 +17,11 @@
  <div class="title">
     <div class="titulo"><h1>Radar COVID</h1></div>
     <p class="spacer"></p>
-    <div class="titulillo"><h2>Menú pricipal</h2></div>
+    <div class="titulillo"><h2>Se ha detectado un contacto con una persona contagiada el día ${registro.fecha}</h2></div>
     <p class="spacer"></p>
 </div>
 
-<div class="insertar">
-    <p class="spacer"></p>
-<form action="FormNotificacionesServlet">
-		<button type="submit" class="boton">NOTIFICACIONES</button>
-</form>
-<p class="spacer"></p>
-<form action="FormCambiaPagina2Servlet">
-		<button type="submit" class="boton">ENVIAR UN REPORTE</button>
-</form>
-<p class="spacer"></p>
-<form action="FormCambiaPagina4Servlet">
-		<button type="submit" class="boton">INICIO</button>
-</form>
-<p class="spacer"></p>
 
-</div>
 </div>
 </div>
 

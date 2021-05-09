@@ -22,7 +22,7 @@ import es.upm.dit.isst.radar.dao.*;
 /**
  * Servlet implementation class FormLoginServlet
  */
-@WebServlet("/FormCambiaPaginaServlet")
+@WebServlet("/FormCambiaPagina3Servlet")
 public class FormCambiaPagina3Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

@@ -23,93 +23,37 @@ public class RegistroInfectadosDAOImplementation implements RegistroInfectadosDA
 	}
 
 	@Override
-	public Usuario create(Usuario usuario) {
+	public RegistroInfectados create(RegistroInfectados registro) {
 		Session session = SessionFactoryService.get().openSession();
 		session.beginTransaction();
-		usuario = null;
-		// operaciones
+		try {
+			session.save(registro);
+		} catch(Exception e) {
+			registro = null;
+		}
 		session.getTransaction().commit();
 		session.close();
-		return usuario;
+		return registro;
 	}
-
 
 	@Override
-	public Usuario read(String email) {
+	public RegistroInfectados read(String clave) {
+		
+		RegistroInfectados registro = null;
+		
 		Session session = SessionFactoryService.get().openSession();
 		session.beginTransaction();
-		Usuario usuario = session.get(Usuario.class, email);
-		session.getTransaction().commit();
-		session.close();
-		return usuario;
-	}
-
 	
-	@Override
-	public Usuario update(Usuario usuario) {
-		Session session = SessionFactoryService.get().openSession();
-		session.beginTransaction();
-		session.saveOrUpdate(usuario);
-		session.getTransaction().commit();
-		session.close();
-		return usuario;
-	}
-
-	
-	@Override
-	public Usuario delete(Usuario usuario) {
-		Session session = SessionFactoryService.get().openSession();
-		session.beginTransaction();
-		session.delete(usuario);
-		session.getTransaction().commit();
-		session.close();
-		return usuario;
-	}
-
-	
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<Usuario> readAll() {
-		List<Usuario> usuarios = new ArrayList<Usuario>();
-		Session session = SessionFactoryService.get().openSession();
-		session.beginTransaction();
-		usuarios.addAll(session.createQuery("from Usuario").list());
-		session.getTransaction().commit();
-		session.close();
-		return usuarios;
+			try {
+				registro = session.get(RegistroInfectados.class, clave);
+			} catch(Exception e) {
+				registro = null;
+			}
+			session.getTransaction().commit();
+			session.close();
+		return registro;
 	}
 
 
-	@Override
-	public Usuario read(int DNI) {
-		Session session = SessionFactoryService.get().openSession();
-		session.beginTransaction();
-		Usuario usuario = session.get(Usuario.class, DNI);
-		session.getTransaction().commit();
-		session.close();
-		return usuario;
-	}
-
-	
-	@Override
-	public Usuario read_1(String password) {
-		Session session = SessionFactoryService.get().openSession();
-		session.beginTransaction();
-		Usuario usuario = session.get(Usuario.class, password);
-		session.getTransaction().commit();
-		session.close();
-		return usuario;
-	}
-
-	
-	@Override
-	public Usuario read_2(String key) {
-		Session session = SessionFactoryService.get().openSession();
-		session.beginTransaction();
-		Usuario usuario = session.get(Usuario.class, key);
-		session.getTransaction().commit();
-		session.close();
-		return usuario;
-	}
 
 }

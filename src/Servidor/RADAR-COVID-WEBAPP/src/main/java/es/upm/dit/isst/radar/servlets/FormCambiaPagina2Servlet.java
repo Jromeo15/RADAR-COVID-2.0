@@ -22,7 +22,7 @@ import es.upm.dit.isst.radar.dao.*;
 /**
  * Servlet implementation class FormLoginServlet
  */
-@WebServlet("/FormCambiaPaginaServlet")
+@WebServlet("/FormCambiaPagina2Servlet")
 public class FormCambiaPagina2Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -31,7 +31,10 @@ public class FormCambiaPagina2Servlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
 			throws ServletException, IOException {
 		
-		getServletContext().getRequestDispatcher("/Registro.jsp").forward(req,resp);
+		Usuario usuario = (Usuario)req.getSession().getAttribute("usuario");
+		req.getSession().setAttribute("usuario", usuario);
+		
+		getServletContext().getRequestDispatcher("/EnviarReporte.jsp").forward(req,resp);
 			
 	}
 
