@@ -27,8 +27,11 @@ public class UsuarioDAOImplementation implements UsuarioDAO {
 	public Usuario create(Usuario usuario) {
 		Session session = SessionFactoryService.get().openSession();
 		session.beginTransaction();
-		usuario = null;
-		// operaciones
+		try {
+			session.save(usuario);
+		} catch(Exception e) {
+			usuario = null;
+		}
 		session.getTransaction().commit();
 		session.close();
 		return usuario;

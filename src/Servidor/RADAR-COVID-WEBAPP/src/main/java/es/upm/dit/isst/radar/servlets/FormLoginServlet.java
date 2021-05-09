@@ -44,11 +44,7 @@ public class FormLoginServlet extends HttpServlet {
            getServletContext().getRequestDispatcher("/Admin.jsp").forward(req,resp);
             return;
         }
-        
-        //getServletContext().getRequestDispatcher("/Hola2.jsp").forward(req,resp);
-        //return;
-        
- 
+    
         if (usuario!=null){
         	
         	 if (usuario.getMinisterio()) {

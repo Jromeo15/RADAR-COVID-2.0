@@ -1,0 +1,208 @@
+
+.center{
+  text-align: center;
+}
+
+.ministerio{
+
+  display:block;
+  margin:auto;
+  height: 200px;
+}
+.title {
+  background-image: -webkit-linear-gradient(top, #000f8a, #2079b0);
+  border: solid blue;
+
+}
+
+
+.titulo {
+  text-align: center;
+  font-size:40px;
+  border-bottom: solid blue;
+}
+.spacer{
+
+  clear:both
+}
+.titulillo{
+  text-align: center;
+  font-size:25px;
+}
+.asterisco{
+  float:right;
+  padding-right:5px;
+}
+.boton{
+  height: 100px;
+  width:300px;
+  background:blue;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;font-family: Arial;
+  color: #fafafa;
+  font-size: 27px;
+  padding: 19px;
+  text-decoration: none;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.boton:hover{
+  background:rgb(30, 89, 107);
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;font-family: Arial;
+  color: #fafafa;
+  font-size: 27px;
+  padding: 19px;
+  text-decoration: none;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.botonM{
+  float:left;
+  background:blue;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;font-family: Arial;
+  color: #fafafa;
+  font-size: 27px;
+  padding: 19px;
+  text-decoration: none;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.botonM:hover{
+  background:rgb(30, 89, 107);
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;font-family: Arial;
+  color: #fafafa;
+  font-size: 27px;
+  padding: 19px;
+  text-decoration: none;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cuadro{
+  border:solid blue;
+  background-color: white;
+  padding: 5px;
+}
+.cuadrov{
+  border:solid rgb(8, 72, 8);
+  background-color:green ;
+  padding: 7px;
+  color:white;
+}
+.cuadror{
+  border:solid rgb(104, 7, 7);
+  background-color:red ;
+  padding: 7px;
+
+}
+
+.insertar{
+  text-align: center;
+}
+
+.negro{
+  color:black
+}
+
+
+a {
+  color: #30cb94;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+blockquote {
+  font-style: italic;
+
+}
+
+
+body {
+  background-image: url(./images/fondo2.jpg);
+  font-family: 'robotoregular';
+  color: #ffffff;
+  padding:5px;
+}
+
+
+h1, h2 {
+  font-weight: normal;
+  font-family: 'robotobold';
+  margin: 3px;
+  padding: 0px;
+  color: white;
+}
+ul {
+  padding-left: 10px;
+  margin: 2px 10px 2px 5px;
+}
+.menuCSS3 ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menuCSS3 a {
+  display: block;
+  padding: 2em;
+  background-image: -webkit-linear-gradient(top, #000f8a, #2079b0);
+  border: solid blue;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menuCSS3 ul li ul {
+  display: none;
+}
+.margen1{
+  margin-right: 43px;
+}
+.margen2{
+  margin-right: 9px;
+}
+.margen3{
+  margin-right: 19px;
+}
+.margen4{
+  margin-right: 17px;
+}
+fieldset{
+  background-color: rgba(3, 11, 41, .2);
+  margin:300px;
+  margin-top: 40px;
+  margin-bottom: 1.5px;
+}
+.notf{
+  text-align: left;
+  color: black;
+}
+.cuadronotf{
+  border:solid blue;
+  background-color: white;
+  padding: 5px;
+  margin-left: 150px;
+  margin-right: 150px;
+}

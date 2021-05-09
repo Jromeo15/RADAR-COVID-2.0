@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="App.css">
 <meta charset="ISO-8859-1">
 <title>RADAR-COVID</title>
 </head>
 <body>
-	<h2>Login</h2>
-	<form action="FormLoginServlet">
-		<input type="text" id ="DNI" name="DNI" placeholder="DNI"> 
-		<input type="password" id ="password" name="password" placeholder="Password">
-		<button type="submit">Login</button>
+
+	
+	 <div class="Iniciosesion">
+
+            <header class="App-header">
+                <div class="title">
+                    <div class="titulo"><h1>Radar COVID</h1></div>
+                    <p class="spacer"></p>
+                    <div class="titulillo"><h2>Iniciar Sesión</h2></div>
+                    <p class="spacer"></p>
+
+                </div>
+            </header>
+            <fieldset>
+                <div class="registro">
+                    <div class="insertar">
+                        <p class="spacer"></p>
+                        <form action="FormLoginServlet">
+							<input type="text" id ="DNI" name="DNI" placeholder="DNI"> 
+							<input type="password" id ="password" name="password" placeholder="Password">
+							<button type="submit" class="boton">Login</button>
+						</form>
+
+                        <p class="spacer"></p>
+                       </div>
+                     </div>
+	</fieldset>
+	</div>
+	
+	
+	
+	<h2></h2>
+	<form action="FormCambiaPagina1Servlet">
+		<button type="submit" class="boton">Registro</button>
 	</form>
 	
 </body>
