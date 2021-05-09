@@ -53,6 +53,12 @@ public class Usuario {
 		this.ministerio = ministerio;
 	}
 
+	@Override
+	public String toString() {
+		return "Usuario [email=" + email + ", password=" + password + ", ministerio=" + ministerio + ", DNI=" + DNI
+				+ "]";
+	}
+
 	
 	
 	

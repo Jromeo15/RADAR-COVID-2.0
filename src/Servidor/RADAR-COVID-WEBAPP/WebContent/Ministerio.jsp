@@ -6,9 +6,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Bienvenido Admin</title>
+<title>Bienvenido Ministerio</title>
 </head>
 <body>
-Hola
+Hola Misiterio
+${usuario.DNI}
 </body>
 </html>

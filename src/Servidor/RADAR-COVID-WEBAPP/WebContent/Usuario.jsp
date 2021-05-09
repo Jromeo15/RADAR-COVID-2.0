@@ -6,9 +6,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Bienvenido Admin</title>
+<title>Bienvenido Usuario</title>
 </head>
 <body>
-Hola
+Hola Usuario
+
+${usuario.email}
 </body>
 </html>

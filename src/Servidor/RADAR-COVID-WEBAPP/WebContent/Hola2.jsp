@@ -9,6 +9,9 @@
 <title>Bienvenido Admin</title>
 </head>
 <body>
-Hola
+
+*{usuario.email}
+
+
 </body>
 </html>
