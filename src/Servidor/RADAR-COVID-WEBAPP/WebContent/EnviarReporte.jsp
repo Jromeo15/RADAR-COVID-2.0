@@ -14,7 +14,7 @@
 <div class="body">
 
  <div class="title">
-    <div class="titulo"><h1>NOTIFICACIONES</h1></div>
+    <div class="titulo"><h1>Enviar un reporte</h1></div>
     <p class="spacer"></p>
 </div>
 
