@@ -23,24 +23,24 @@
                 <div class="registro">
                     <div class="insertar">
                         <p class="spacer"></p>
-                        <form action="FormLoginServlet">
-							<input type="text" id ="DNI" name="DNI" placeholder="DNI"> 
-							<input type="password" id ="password" name="password" placeholder="Password">
-							<button type="submit" class="boton">Login</button>
-						</form>
+                        <p>DNI <input type="text" onChange={dni}></input></p>
+                        <p class="margen1">Contraseña <input type="password" id="password" name="password"></input></p>
+
+                            <button className="boton">INICIAR SESIÓN</button>
 
                         <p class="spacer"></p>
-                       </div>
-                     </div>
-	</fieldset>
+                        <p>--------------------------------------------------------------------------------------------------------------</p>
+                        <p class="spacer"></p>
+                        <p>¿No tienes cuenta?</p>
+                        	<form action="FormCambiaPagina1Servlet">
+								<button type="submit" class="boton">Registro</button>
+							</form>
+                    </div>
+                </div>
+            </fieldset>
+            
 	</div>
 	
-	
-	
-	<h2></h2>
-	<form action="FormCambiaPagina1Servlet">
-		<button type="submit" class="boton">Registro</button>
-	</form>
 	
 </body>
 </html>
