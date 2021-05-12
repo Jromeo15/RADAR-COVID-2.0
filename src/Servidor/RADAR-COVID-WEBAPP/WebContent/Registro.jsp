@@ -22,8 +22,11 @@
                         <p class="margen4">Correo electrónico <input type="email" id="email" name="email" placeholder="Introduzca su email"></input></p>
                         <p class="margen4">Ministerio<input type = "checkbox" name = "ministerio"  value="true"></input></p>
                         <p></p>
+                        
 						
                         <button class="boton">REGISTRARME</button>
+                        </form>
+                        <form action="FormLogoutServlet">
                         <button class="boton">Menú Inicio</button>
 						</form>
 
