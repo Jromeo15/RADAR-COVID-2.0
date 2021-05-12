@@ -24,6 +24,7 @@
                         <p></p>
 						
                         <button class="boton">REGISTRARME</button>
+                        <button class="boton">Menú Inicio</button>
 						</form>
 
                             </div>
