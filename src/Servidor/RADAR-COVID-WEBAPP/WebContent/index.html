@@ -16,18 +16,17 @@
                     <p class="spacer"></p>
                     <div class="titulillo"><h2>Iniciar Sesión</h2></div>
                     <p class="spacer"></p>
-
                 </div>
             </header>
             <fieldset>
                 <div class="registro">
                     <div class="insertar">
+                   		<form action="FormLoginServlet">
                         <p class="spacer"></p>
-                        <p>DNI <input type="text" onChange={dni}></input></p>
+                        <p>DNI <input type="text" name="DNI" id ="DNI"></input></p>
                         <p class="margen1">Contraseña <input type="password" id="password" name="password"></input></p>
-
-                            <button className="boton">INICIAR SESIÓN</button>
-
+                            <button type="submit" class="boton">INICIAR SESIÓN</button>
+						</form>
                         <p class="spacer"></p>
                         <p>--------------------------------------------------------------------------------------------------------------</p>
                         <p class="spacer"></p>

@@ -12,11 +12,20 @@
 <body>
 
 	<div class="registro">
+	<div class="title">
+                    <div class="titulo"><h1>Radar COVID</h1></div>
+                    <p class="spacer"></p>
+                    <div class="titulillo"><h2>Registro</h2></div>
+                    <p class="spacer"></p>
+
+                </div>
                     <div class="insertar">
                         <fieldset>
                             <div class="fieldfondo">
                         <p></p>
                         <form action="FormSignUpServlet">
+                        
+                        
                         <p>Introduce tu DNI <input type="text" id="DNI" name="DNI" placeholder="Introduzca su DNI"></input></p>
                         <p class="margen2">Crea tu contraseña <input type="password" id="password" name="password" placeholder="Introduzca una contraseña"></input></p>
                         <p class="margen4">Correo electrónico <input type="email" id="email" name="email" placeholder="Introduzca su email"></input></p>
@@ -25,6 +34,7 @@
                         
 						
                         <button class="boton">REGISTRARME</button>
+                        <p></p>
                         </form>
                         <form action="FormLogoutServlet">
                         <button class="boton">Menú Inicio</button>
