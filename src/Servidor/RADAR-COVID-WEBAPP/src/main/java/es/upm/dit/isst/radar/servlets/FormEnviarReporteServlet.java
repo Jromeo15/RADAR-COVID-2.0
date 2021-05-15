@@ -37,11 +37,16 @@ public class FormEnviarReporteServlet extends HttpServlet {
         
 		String DNI = usuario.getDNI();
 		Date fecha = new Date();
-		byte[] array = new byte[16];
-	    new Random().nextBytes(array);
-	    //String clave = new String(array, Charset.forName("UTF-8"));
-	    
-	    String clave =  "prueba";
+		
+		 String banco = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+		
+		String clave = "";
+        for (int x = 0; x < 15; x++) {
+            int indiceAleatorio = (int) (Math.random() * banco.length());
+            char caracterAleatorio = banco.charAt(indiceAleatorio);
+            clave += caracterAleatorio;
+        }
+
 	    
 	    RegistroInfectados registro = new RegistroInfectados();
 	    
