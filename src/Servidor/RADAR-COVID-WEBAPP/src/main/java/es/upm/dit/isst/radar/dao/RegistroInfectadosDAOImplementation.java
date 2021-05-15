@@ -56,7 +56,7 @@ public class RegistroInfectadosDAOImplementation implements RegistroInfectadosDA
 	@Override
 	public List<RegistroInfectados> readAll() {
 		
-		List<RegistroInfectados> registros = new ArrayList<RegistroInfectados> ();
+		List<RegistroInfectados> registros = new ArrayList<RegistroInfectados>();
 		Session session = SessionFactoryService.get().openSession();
 		session.beginTransaction(); 
 		registros.addAll(session.createQuery("from RegistroInfectados").list());

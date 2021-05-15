@@ -55,6 +55,12 @@ public class RegistroInfectados {
 		DNI = dNI;
 	}
 
+	@Override
+	public String toString() {
+		return "RegistroInfectados [Fecha=" + Fecha + ", Clave=" + Clave + ", DNI=" + DNI + ", confirmado=" + confirmado
+				+ "]";
+	}
+
 	
 	
 

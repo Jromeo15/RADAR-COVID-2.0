@@ -17,21 +17,30 @@
  <div class="title">
     <div class="titulo"><h1>Radar COVID</h1></div>
     <p class="spacer"></p>
-    <table border="1">
+<table border="1">
 <tr>
 <th>DNI </th>
 <th>Clave</th>
 <th>Fecha</th>
-<th>Confirmado</th>
+<th>confirmado</th>
 
 </tr>
 
-<c:forEach items="${registrados}" var="tfgi">
+<c:forEach items="${registros}" var="registroi">
 <tr>
-<td>${registrados.DNI}</td>
-<td>${registrados.Clave}</td>
-<td>${registrados.Fecha}</td>
-<td>${registrados.Confirmado}</td>
+
+<td>${registroi.DNI}</td>
+<td>${registroi.clave}</td>
+<td>${registroi.fecha}</td>
+<td>${registroi.confirmado}</td>
+<c:if test="${registroi.confirmado == false}">
+<td>
+<form action="FormConfirmacionServlet">
+		<button type="submit" >Confirmar</button>
+</form>
+</td>
+</c:if>
+
     
 </tr>
 </c:forEach>
