@@ -6,7 +6,6 @@ import java.util.List;
 import org.hibernate.Session;
 
 import es.upm.dit.isst.radar.model.RegistroInfectados;
-import es.upm.dit.isst.radar.model.Usuario;
 import es.upm.dit.isst.radar.dao.SessionFactoryService;
 
 public class RegistroInfectadosDAOImplementation implements RegistroInfectadosDAO {
@@ -52,6 +51,18 @@ public class RegistroInfectadosDAOImplementation implements RegistroInfectadosDA
 			session.getTransaction().commit();
 			session.close();
 		return registro;
+	}
+
+	@Override
+	public List<RegistroInfectados> readAll() {
+		
+		List<RegistroInfectados> registros = new ArrayList<RegistroInfectados> ();
+		Session session = SessionFactoryService.get().openSession();
+		session.beginTransaction(); 
+		registros.addAll(session.createQuery("from RegistroInfectados").list());
+		session.getTransaction().commit();
+		session.close();
+		return registros;
 	}
 
 

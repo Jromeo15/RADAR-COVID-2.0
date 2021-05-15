@@ -17,22 +17,28 @@
  <div class="title">
     <div class="titulo"><h1>Radar COVID</h1></div>
     <p class="spacer"></p>
-    <div class="titulillo"><h2>Menú pricipal</h2></div>
-    <p class="spacer"></p>
+    <table border="1">
+<tr>
+<th>DNI </th>
+<th>Clave</th>
+<th>Fecha</th>
+<th>Confirmado</th>
+
+</tr>
+
+<c:forEach items="${registrados}" var="tfgi">
+<tr>
+<td>${registrados.DNI}</td>
+<td>${registrados.Clave}</td>
+<td>${registrados.Fecha}</td>
+<td>${registrados.Confirmado}</td>
+    
+</tr>
+</c:forEach>
+</table>
 </div>
 
-<div class="insertar">
-    <p class="spacer"></p>
-<form action="FormConfirmarReporteServlet">
-		<button type="submit" class="boton">CONFIRMAR UN REPORTE</button>
-</form>
-<p class="spacer"></p>
-<form action="FormCambiaPagina4Servlet">
-		<button type="submit" class="boton">INICIO</button>
-</form>
-<p class="spacer"></p>
 
-</div>
 </div>
 </div>
 

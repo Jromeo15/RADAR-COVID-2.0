@@ -25,32 +25,21 @@ import es.upm.dit.isst.radar.dao.*;
 /**
  * Servlet implementation class FormLoginServlet
  */
-@WebServlet("/FormEnviarReporteServlet")
-public class FormEnviarReporteServlet extends HttpServlet {
+@WebServlet("/FormConfirmarReporteServlet")
+public class FormConfirmarReporteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L; 
        
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
                        throws ServletException, IOException {
         
-		Usuario usuario = (Usuario)req.getSession().getAttribute("usuario");
-        
-		String DNI = usuario.getDNI();
-		Date fecha = new Date();
-		byte[] array = new byte[16];
-	    new Random().nextBytes(array);
-	    String clave = new String(array, Charset.forName("UTF-8"));
+			    
+	    List<RegistroInfectados> registros = RegistroInfectadosDAOImplementation.getInstance().readAll();
 	    
-	    RegistroInfectados registro = new RegistroInfectados();
-	    
-	    registro.setClave(clave);
-	    registro.setDNI(DNI);
-	    registro.setFecha(fecha);
-	    registro.setConfirmado(false);
-	    
-	    RegistroInfectadosDAOImplementation.getInstance().create(registro);
-		
-		getServletContext().getRequestDispatcher("/Usuario.jsp").forward(req,resp);
+    	
+    	req.getSession().setAttribute("registros", registros);
+	    		
+    	getServletContext().getRequestDispatcher("/ConfirmarReporte.jsp").forward(req,resp);
         
     }
 
