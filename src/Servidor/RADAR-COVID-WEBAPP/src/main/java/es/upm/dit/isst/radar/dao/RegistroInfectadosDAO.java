@@ -9,5 +9,6 @@ public interface RegistroInfectadosDAO {
 	
 	public RegistroInfectados create(RegistroInfectados registro);
 	public RegistroInfectados read(String clave);
+	public List<RegistroInfectados> readAll();
 
 }

@@ -16,7 +16,16 @@ public class RegistroInfectados {
 	@Id
 	private String Clave;
 	private String DNI;
+	private boolean confirmado;
 	
+
+	public boolean isConfirmado() {
+		return confirmado;
+	}
+
+	public void setConfirmado(boolean confirmado) {
+		this.confirmado = confirmado;
+	}
 
 	public RegistroInfectados() {
 		super();

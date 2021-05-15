@@ -23,7 +23,7 @@
 <img alt="" src="images/Ministerio.png" alt="Logo" class="ministerio"></img>
 <div class="insertar">
     <p class="spacer"></p>
-<form action="FormCambiaPagina3Servlet">
+<form action="FormConfirmarReporteServlet">
 		<button type="submit" class="boton">CONFIRMAR UN REPORTE</button>
 </form>
 <p class="spacer"></p>
