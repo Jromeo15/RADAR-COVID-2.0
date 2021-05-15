@@ -54,6 +54,12 @@ throws java.io.IOException, ServletException
  	       aceptarInsertar(request,response);
 
  	   }
+        
+	     String requestURI = request.getRequestURI(); 
+	     
+	     String toReplace = requestURI.substring(requestURI.indexOf("/Radar"), requestURI.lastIndexOf("/") + 1); 
+         String newURI = requestURI.replace(toReplace, "?Contact_Id=");
+         request.getRequestDispatcher(newURI).forward(request, response);
      
  	statement.close();
  	result.close();
@@ -118,6 +124,18 @@ throws java.io.IOException, ServletException
 	    }
 
 	  }
+   public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws ServletException, IOException { 
+	     HttpServletRequest request = (HttpServletRequest) req; 
+	     String requestURI = request.getRequestURI(); 
+
+	     if (requestURI.startsWith("/Check_License/Dir_My_App/")) { 
+	      String toReplace = requestURI.substring(requestURI.indexOf("/Dir_My_App"), requestURI.lastIndexOf("/") + 1); 
+	      String newURI = requestURI.replace(toReplace, "?Contact_Id="); 
+	      req.getRequestDispatcher(newURI).forward(req, res); 
+	     } else { 
+	      chain.doFilter(req, res); 
+	     } 
+	    } 
    public void init() { 
 
 		// Traer el Contexto de la Aplicación y colocar Pool recién generado

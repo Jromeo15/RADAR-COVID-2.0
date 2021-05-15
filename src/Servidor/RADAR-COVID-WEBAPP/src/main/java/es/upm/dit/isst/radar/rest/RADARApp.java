@@ -1,4 +1,4 @@
-package es.upm.dit.isst.tfg.rest;
+package es.upm.dit.isst.radar.rest;
 
 import javax.ws.rs.ApplicationPath;
 
