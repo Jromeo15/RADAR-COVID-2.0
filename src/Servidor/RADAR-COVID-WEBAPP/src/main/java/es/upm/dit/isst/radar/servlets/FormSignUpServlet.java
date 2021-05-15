@@ -47,15 +47,24 @@ public class FormSignUpServlet extends HttpServlet {
 			usuario.setMinisterio(true);
 		}
 		else {
-			
 			usuario.setMinisterio(false);
 		}
 		
+		
 		req.getSession().setAttribute("usuario", usuario);
-		
 		UsuarioDAOImplementation.getInstance().create(usuario);
-		
-		getServletContext().getRequestDispatcher("/Usuario.jsp").forward(req,resp);
+		//getServletContext().getRequestDispatcher("/Usuario.jsp").forward(req,resp);
+		if (usuario.getMinisterio()) {
+            
+            getServletContext().getRequestDispatcher("/Ministerio.jsp").forward(req,resp);
+            return;
+   	 } 
+   	 
+   	 else {
+   		 
+   		 getServletContext().getRequestDispatcher("/Usuario.jsp").forward(req,resp);
+            return;
+   	 }
 			
 	}
 
