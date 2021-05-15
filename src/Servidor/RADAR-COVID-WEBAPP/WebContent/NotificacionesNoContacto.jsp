@@ -17,9 +17,15 @@
  <div class="title">
     <div class="titulo"><h1>Radar COVID</h1></div>
     <p class="spacer"></p>
-    <div class="titulillo"><h2>No se ha detectado ningún contacto con una persona contagiada</h2></div>
+    <div class="titulillo"><h2>Notificaciones</h2></div>
     <p class="spacer"></p>
 </div>
+<div class="registro">
+     <div class="insertar">
+     <p class="spacer"></p>
+     <p>No se ha detectado ningún contacto con una persona contagiada</p>
+     </div>
+     </div>
 
 <form action="FormCambiaPagina3Servlet">
 		<button type="submit" class="boton">ATRÁS</button>
