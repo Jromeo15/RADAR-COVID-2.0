@@ -20,7 +20,7 @@
     <div class="titulillo"><h2>Menú pricipal</h2></div>
     <p class="spacer"></p>
 </div>
-
+<img alt="" src="images/Ministerio.png" alt="Logo" class="ministerio"></img>
 <div class="insertar">
     <p class="spacer"></p>
 <form action="FormConfirmarReporteServlet">
