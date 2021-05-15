@@ -23,7 +23,7 @@
 <div class="registro">
      <div class="insertar">
      <p class="spacer"></p>
-     <p>No se ha detectado ningún contacto con una persona contagiada</p>
+     <p>Se ha detectado un contacto con una persona contagiada</p>
      </div>
      </div>
 
