@@ -37,7 +37,7 @@
                         <p></p>
                         </form>
                         <form action="FormLogoutServlet">
-                        <button class="boton">Menú Inicio</button>
+                        <button class="boton">MENÚ INICIO</button>
 						</form>
 
                             </div>

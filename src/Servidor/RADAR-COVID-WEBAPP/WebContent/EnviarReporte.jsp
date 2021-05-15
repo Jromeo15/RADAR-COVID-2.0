@@ -23,7 +23,7 @@
 <form action="FormEnviarReporteServlet">
 Escriba aquí cualquier información que quiera aportar al reporte.
 	<input type="text" id ="comentario" name="comentario"> 
-	<button type="submit" class="boton">Enviar</button>
+	<button type="submit" class="boton">ENVIAR</button>
 </form>
 <p class="spacer"></p>
 <form action="FormCambiaPagina4Servlet">
