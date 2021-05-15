@@ -33,14 +33,21 @@ public class FormConfirmacionServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
                        throws ServletException, IOException {
         
-			    
-	    List<RegistroInfectados> registros = RegistroInfectadosDAOImplementation.getInstance().readAll();
-	    
+    	
+    	String clave = req.getParameter("registroclave");
+    	
+    	RegistroInfectados registro = RegistroInfectadosDAOImplementation.getInstance().read(clave);
+    	
+    	registro.setConfirmado(true);
+    	
+    	RegistroInfectadosDAOImplementation.getInstance().update(registro);
+    	
+    	List<RegistroInfectados> registros = RegistroInfectadosDAOImplementation.getInstance().readAll();
     	
     	req.getSession().setAttribute("registros", registros);
-	    		
+    	
     	getServletContext().getRequestDispatcher("/ConfirmarReporte.jsp").forward(req,resp);
         
+   
     }
-
 }

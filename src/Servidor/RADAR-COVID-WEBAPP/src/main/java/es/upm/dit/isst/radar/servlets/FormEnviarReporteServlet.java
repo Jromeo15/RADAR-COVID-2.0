@@ -39,7 +39,9 @@ public class FormEnviarReporteServlet extends HttpServlet {
 		Date fecha = new Date();
 		byte[] array = new byte[16];
 	    new Random().nextBytes(array);
-	    String clave = new String(array, Charset.forName("UTF-8"));
+	    //String clave = new String(array, Charset.forName("UTF-8"));
+	    
+	    String clave =  "prueba";
 	    
 	    RegistroInfectados registro = new RegistroInfectados();
 	    

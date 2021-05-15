@@ -22,7 +22,7 @@
 <th>DNI </th>
 <th>Clave</th>
 <th>Fecha</th>
-<th>confirmado</th>
+<th>Confirmado</th>
 
 </tr>
 
@@ -36,6 +36,7 @@
 <c:if test="${registroi.confirmado == false}">
 <td>
 <form action="FormConfirmacionServlet">
+		<input type="hidden" name="registroclave" value="${registroi.clave}" />
 		<button type="submit" >Confirmar</button>
 </form>
 </td>
