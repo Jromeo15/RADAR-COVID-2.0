@@ -31,7 +31,7 @@ public class FormCambiaPagina3Servlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
 			throws ServletException, IOException {
 		
-		getServletContext().getRequestDispatcher("/Registro.jsp").forward(req,resp);
+		getServletContext().getRequestDispatcher("/Usuario.jsp").forward(req,resp);
 			
 	}
 
