@@ -28,7 +28,7 @@
      </div>
 
 <form action="FormCambiaPagina3Servlet">
-		<button type="submit" class="boton">ATRÁS</button>
+		<button type="submit" class="boton">MENÚ</button>
 </form>
 
 

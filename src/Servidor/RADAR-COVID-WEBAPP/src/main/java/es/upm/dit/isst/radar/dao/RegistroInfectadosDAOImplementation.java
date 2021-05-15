@@ -75,6 +75,16 @@ public class RegistroInfectadosDAOImplementation implements RegistroInfectadosDA
 		return registro;
 	}
 
+	@Override
+	public RegistroInfectados delete(RegistroInfectados registro) {
+		Session session = SessionFactoryService.get().openSession();
+		session.beginTransaction();
+		session.delete(registro);
+		session.getTransaction().commit();
+		session.close();
+		return registro;
+	}
+
 
 
 }

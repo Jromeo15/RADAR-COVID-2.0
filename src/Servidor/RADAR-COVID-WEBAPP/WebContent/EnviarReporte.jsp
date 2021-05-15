@@ -14,7 +14,9 @@
 <div class="body">
 
  <div class="title">
-    <div class="titulo"><h1>Enviar un reporte</h1></div>
+    <div class="titulo"><h1>Radar COVID</h1></div>
+    <p class="spacer"></p>
+    <div class="titulillo"><h2>Enviar reporte</h2></div>
     <p class="spacer"></p>
 </div>
 
@@ -23,11 +25,12 @@
 <form action="FormEnviarReporteServlet">
 Escriba aquí cualquier información que quiera aportar al reporte.
 	<input type="text" id ="comentario" name="comentario"> 
+	<p></p>
 	<button type="submit" class="boton">ENVIAR</button>
 </form>
 <p class="spacer"></p>
-<form action="FormCambiaPagina4Servlet">
-		<button type="submit" class="boton">INICIO</button>
+<form action="FormCambiaPagina3Servlet">
+		<button type="submit" class="boton">MENÚ</button>
 </form>
 <p class="spacer"></p>
 

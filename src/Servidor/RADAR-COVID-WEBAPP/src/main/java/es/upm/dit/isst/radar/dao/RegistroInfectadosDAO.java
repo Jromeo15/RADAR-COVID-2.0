@@ -11,5 +11,6 @@ public interface RegistroInfectadosDAO {
 	public RegistroInfectados read(String clave);
 	public List<RegistroInfectados> readAll();
 	public RegistroInfectados update(RegistroInfectados registro);
+	public RegistroInfectados delete(RegistroInfectados registro);
 
 }

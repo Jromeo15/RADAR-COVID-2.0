@@ -17,12 +17,22 @@
  <div class="title">
     <div class="titulo"><h1>Radar COVID</h1></div>
     <p class="spacer"></p>
-<table border="1">
+    <div class="titulillo"><h2>Posibles contactos</h2></div>
+    <p class="spacer"></p>
+</div>
+<p></p>
+<table border="1" style="margin: 0 auto;">
 <tr>
 <th>DNI </th>
 <th>Clave</th>
 <th>Fecha</th>
 <th>Confirmado</th>
+<c:forEach items="${registros}" var="registroi">
+<c:if test="${registroi.confirmado == false}">
+<th>Confirmar</th>
+</c:if> 
+</c:forEach>
+<th>Denegar</th>
 
 </tr>
 
@@ -40,14 +50,19 @@
 		<button type="submit" >Confirmar</button>
 </form>
 </td>
-</c:if>
+</c:if> 
+<td>
+<form action="FormDenegarServlet">
+		<input type="hidden" name="registroclave" value="${registroi.clave}" />
+		<button type="submit" >Denegar</button>
+</form>
+</td>
 
-    
 </tr>
 </c:forEach>
 </table>
-</div>
 
+<p></p>
 <form action="FormCambiaPagina5Servlet">
 		<button type="submit" class="boton">ATRÁS</button>
 </form>
