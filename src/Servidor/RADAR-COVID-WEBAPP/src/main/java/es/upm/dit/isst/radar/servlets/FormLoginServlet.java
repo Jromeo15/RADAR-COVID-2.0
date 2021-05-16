@@ -24,9 +24,7 @@ import es.upm.dit.isst.radar.dao.*;
  */
 @WebServlet("/FormLoginServlet")
 public class FormLoginServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-	private final String ADMIN_DNI = "root";
-    private final String ADMIN_PASSWORD = "root"; 
+	private static final long serialVersionUID = 1L; 
        
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -38,13 +36,7 @@ public class FormLoginServlet extends HttpServlet {
         UsuarioDAO usuarioDAO = UsuarioDAOImplementation.getInstance();
 		Usuario usuario = usuarioDAO.loginUsuario(DNI,password);
 		req.getSession().setAttribute("usuario", usuario);
-        
-        if( ADMIN_DNI.equals(DNI) && ADMIN_PASSWORD.equals(password) ) {        
-
-           getServletContext().getRequestDispatcher("/Admin.jsp").forward(req,resp);
-            return;
-        }
-    
+            
         if (usuario!=null){
         	
         	 if (usuario.getMinisterio()) {
@@ -62,7 +54,7 @@ public class FormLoginServlet extends HttpServlet {
         
         else {
         	
-        	resp.sendRedirect(req.getContextPath() + "/Registro.jsp");
+        	resp.sendRedirect(req.getContextPath() + "/indexFallo.html");
         }
         
     }

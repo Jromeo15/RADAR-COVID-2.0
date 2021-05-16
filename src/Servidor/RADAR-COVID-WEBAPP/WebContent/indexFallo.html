@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="App.css">
+<meta charset="ISO-8859-1">
+<title>RADAR-COVID</title>
+</head>
+<body>
+
+	
+	 <div class="Iniciosesion">
+
+            <header class="App-header">
+                <div class="title">
+                    <div class="titulo"><h1>Radar COVID</h1></div>
+                    <p class="spacer"></p>
+                    <div class="titulillo"><h2>Iniciar Sesión</h2></div>
+                    <p class="spacer"></p>
+                </div>
+            </header>
+            <fieldset>
+                <div class="registro">
+                    <div class="insertar">
+                   		<form action="FormLoginServlet">
+                        <p class="spacer"></p>
+                        <p>Los datos introducidos son incorrectos. Inténtelo de nuevo:</p>
+                        <p class="spacer"></p>
+                        <p>DNI <input type="text" name="DNI" id ="DNI"></input></p>
+                        <p class="margen1">Contraseña <input type="password" id="password" name="password"></input></p>
+                            <button type="submit" class="boton">INICIAR SESIÓN</button>
+						</form>
+                        <p class="spacer"></p>
+                        <p>--------------------------------------------------------------------------------------------------------------</p>
+                        <p class="spacer"></p>
+                        <p>¿No tienes cuenta?</p>
+                        	<form action="FormCambiaPagina1Servlet">
+								<button type="submit" class="boton">REGISTRO</button>
+							</form>
+                    </div>
+                </div>
+            </fieldset>
+            
+	</div>
+	
+	
+</body>
+</html>

@@ -42,12 +42,12 @@ public class FormSignUpServlet extends HttpServlet {
 		String email = req.getParameter("email");
 		String DNI = req.getParameter("DNI");
 		if (DNI.length()!=9 || !isNumeric(DNI.substring(0, 7)) || isNumeric(DNI.substring(7))) {
-            getServletContext().getRequestDispatcher("/Registro.jsp").forward(req,resp);
+            getServletContext().getRequestDispatcher("/RegistroFallo.jsp").forward(req,resp);
             return;
         }
 		String password = req.getParameter("password");
 		if (password.length()<8 || password.length()>16) {
-            getServletContext().getRequestDispatcher("/Registro.jsp").forward(req,resp);
+            getServletContext().getRequestDispatcher("/RegistroFallo.jsp").forward(req,resp);
             return;
         }
 		boolean ministerio = Boolean.parseBoolean( req.getParameter("ministerio") );
