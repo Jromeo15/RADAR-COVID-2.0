@@ -23,23 +23,30 @@
                         <fieldset>
                             <div class="fieldfondo">
                         <p></p>
+                        
                         <form action="FormSignUpServlet">
                         
                         
-                        <p>Introduce tu DNI <input type="text" id="DNI" name="DNI" placeholder="Introduzca su DNI"></input></p>
-                        <p class="margen2">Crea tu contraseña <input type="password" id="password" name="password" placeholder="Introduzca una contraseña"></input></p>
+                        
+                        <p>Introduce tu DNI* <input type="text" id="DNI" name="DNI" placeholder="Introduzca su DNI" minlength="8" maxlength="8"></input></p>     
+                                      
+                        <p class="margen2">Crea tu contraseña* <input type="password" id="password" name="password" placeholder="Introduzca una contraseña"></input></p>
                         <p class="margen4">Correo electrónico <input type="email" id="email" name="email" placeholder="Introduzca su email"></input></p>
                         <p class="margen4">Ministerio<input type = "checkbox" name = "ministerio"  value="true"></input></p>
+                        <h6 style="text-align:left">*El DNI tiene debe contener 8 números y una letra</h6>   
+                        <h6 style="text-align:left">*La contraseña debe de tener longitud mínima de 8 y máxima de 16</h6> 
                         <p></p>
+                        
                         
 						
                         <button class="boton">REGISTRARME</button>
+                        
                         <p></p>
                         </form>
+                        
                         <form action="FormLogoutServlet">
                         <button class="boton">MENÚ INICIO</button>
-						</form>
-
+						</form> 
                             </div>
                         </fieldset>
                     </div>

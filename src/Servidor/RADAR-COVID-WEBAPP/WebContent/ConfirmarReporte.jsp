@@ -54,7 +54,7 @@
 <td>
 <form action="FormDenegarServlet">
 		<input type="hidden" name="registroclave" value="${registroi.clave}" />
-		<button type="submit" >Denegar</button>
+		<button type="submit">Denegar</button>
 </form>
 </td>
 
