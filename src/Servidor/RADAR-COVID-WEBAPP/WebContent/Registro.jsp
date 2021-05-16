@@ -28,7 +28,7 @@
                         
                         
                         
-                        <p>Introduce tu DNI* <input type="text" id="DNI" name="DNI" placeholder="Introduzca su DNI" minlength="8" maxlength="8"></input></p>     
+                        <p>Introduce tu DNI* <input type="text" id="DNI" name="DNI" placeholder="Introduzca su DNI" maxlength="9"></input></p>     
                                       
                         <p class="margen2">Crea tu contraseña* <input type="password" id="password" name="password" placeholder="Introduzca una contraseña"></input></p>
                         <p class="margen4">Correo electrónico <input type="email" id="email" name="email" placeholder="Introduzca su email"></input></p>
