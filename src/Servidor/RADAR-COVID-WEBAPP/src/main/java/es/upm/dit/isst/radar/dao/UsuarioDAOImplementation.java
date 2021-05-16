@@ -39,10 +39,10 @@ public class UsuarioDAOImplementation implements UsuarioDAO {
 
 
 	@Override
-	public Usuario read(String email) {
+	public Usuario read(String DNI) {
 		Session session = SessionFactoryService.get().openSession();
 		session.beginTransaction();
-		Usuario usuario = session.get(Usuario.class, email);
+		Usuario usuario = session.get(Usuario.class, DNI);
 		session.getTransaction().commit();
 		session.close();
 		return usuario;
