@@ -37,12 +37,12 @@ public class FormNotificacionesServlet extends HttpServlet {
 	    new Random().nextBytes(array);
 	    String clave = new String(array, Charset.forName("UTF-8"));
 	    
-	    RegistroInfectados registro = RegistroInfectadosDAOImplementation.getInstance().read(clave);
+	    List<RegistroInfectados> registro = RegistroInfectadosDAOImplementation.getInstance().readAll();
 	    
     	
     	req.getSession().setAttribute("registro", registro);
 	    		
-	    if(registro != null) {
+	    if(registro.size() >0 ) {
 	    	
 	    	getServletContext().getRequestDispatcher("/NotificacionesContacto.jsp").forward(req,resp);
 	    }
