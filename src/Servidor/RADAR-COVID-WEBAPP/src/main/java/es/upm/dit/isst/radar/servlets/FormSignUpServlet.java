@@ -46,6 +46,10 @@ public class FormSignUpServlet extends HttpServlet {
             return;
         }
 		String password = req.getParameter("password");
+		if (password.length()<8 || password.length()>16) {
+            getServletContext().getRequestDispatcher("/Registro.jsp").forward(req,resp);
+            return;
+        }
 		boolean ministerio = Boolean.parseBoolean( req.getParameter("ministerio") );
 		
 		Usuario usuario = new Usuario();
