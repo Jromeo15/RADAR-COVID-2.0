@@ -84,7 +84,17 @@ public class RegistroInfectadosDAOImplementation implements RegistroInfectadosDA
 		session.close();
 		return registro;
 	}
-
-
+	
+	@Override
+	public void deleteAll(){
+		Session session = SessionFactoryService.get().openSession();
+		session.beginTransaction();
+		List<RegistroInfectados> lista=this.readAll();
+		for (int i=0; i<lista.size(); i++) {
+			lista.remove(i);
+		}
+		session.getTransaction().commit();
+		session.close();
+	}
 
 }

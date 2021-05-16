@@ -12,5 +12,6 @@ public interface RegistroInfectadosDAO {
 	public List<RegistroInfectados> readAll();
 	public RegistroInfectados update(RegistroInfectados registro);
 	public RegistroInfectados delete(RegistroInfectados registro);
+	public void deleteAll();
 
 }

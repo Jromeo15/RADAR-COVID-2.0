@@ -1,12 +1,16 @@
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.Date;
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 
+import es.upm.dit.isst.radar.dao.RegistroInfectadosDAOImplementation;
 import es.upm.dit.isst.radar.dao.UsuarioDAOImplementation;
+import es.upm.dit.isst.radar.model.RegistroInfectados;
 import es.upm.dit.isst.radar.model.Usuario;
 
 class PruebaUsuario {
-	
 	@Test
 	void testCreate() {
 		 Usuario u = new Usuario();
@@ -40,5 +44,43 @@ class PruebaUsuario {
 		UsuarioDAOImplementation.getInstance().delete(u3);
 		UsuarioDAOImplementation.getInstance().delete(u4);
 	}
+		
+	@Test
+	void testReadAll() {
+		UsuarioDAOImplementation.getInstance().deleteAll();
+		Usuario u5 = new Usuario();
+		u5.setEmail("c@c.c");
+		u5.setPassword("contrasena2");
+		u5.setMinisterio(false);
+		u5.setDNI("11123344C");
+		UsuarioDAOImplementation.getInstance().create(u5);
+		
+		Usuario u6 = new Usuario();
+		u6.setEmail("d@d.d");
+		u6.setPassword("contrasena3");
+		u6.setMinisterio(false);
+		u6.setDNI("11123344D");
+		UsuarioDAOImplementation.getInstance().create(u6);
+		
+		List<Usuario> lista = UsuarioDAOImplementation.getInstance().readAll();
+		assertEquals(lista.get(0).getDNI(),u5.getDNI());
+		assertEquals(lista.get(1).getDNI(),u6.getDNI());
+		
+		UsuarioDAOImplementation.getInstance().delete(u5);
+		UsuarioDAOImplementation.getInstance().delete(u6);
+	}
 	
+	@Test
+	void testDelete() {
+		Usuario u7 = new Usuario();
+		u7.setEmail("e@e.e");
+		u7.setPassword("contrasena4");
+		u7.setMinisterio(false);
+		u7.setDNI("11123344E");
+		UsuarioDAOImplementation.getInstance().create(u7);
+		
+		UsuarioDAOImplementation.getInstance().delete(u7);
+		
+		assertNull(UsuarioDAOImplementation.getInstance().read("11123344E"));
+	}
 }

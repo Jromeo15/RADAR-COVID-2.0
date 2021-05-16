@@ -125,5 +125,16 @@ public class UsuarioDAOImplementation implements UsuarioDAO {
 		return usuario;
 	}
 
+	@Override
+	public void deleteAll(){
+		Session session = SessionFactoryService.get().openSession();
+		session.beginTransaction();
+		List<Usuario> lista=this.readAll();
+		for (int i=0; i<lista.size(); i++) {
+			lista.remove(i);
+		}
+		session.getTransaction().commit();
+		session.close();
+	}
 	
 }

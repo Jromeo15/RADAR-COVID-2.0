@@ -3,6 +3,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.Date;
 import java.util.List;
 
+import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
 import es.upm.dit.isst.radar.dao.RegistroInfectadosDAOImplementation;
@@ -13,6 +14,7 @@ class PruebaRegistroInf {
 	
 	@Test
 	void testCreate() {
+		RegistroInfectadosDAOImplementation.getInstance().deleteAll();
 		RegistroInfectados r = new RegistroInfectados();
 		Date fecha = new Date();
 		r.setFecha(fecha);
@@ -30,6 +32,7 @@ class PruebaRegistroInf {
 	
 	@Test
 	void testReadAll() {
+		RegistroInfectadosDAOImplementation.getInstance().deleteAll();
 		RegistroInfectados r3 = new RegistroInfectados();
 		Date fecha = new Date();
 		r3.setFecha(fecha);
