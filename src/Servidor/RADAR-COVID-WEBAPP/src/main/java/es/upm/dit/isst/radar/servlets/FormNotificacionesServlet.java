@@ -41,17 +41,22 @@ public class FormNotificacionesServlet extends HttpServlet {
 	    
     	
     	req.getSession().setAttribute("registro", registro);
-	    		
-	    for (int i=0; i<registro.size(); i++) {
-	    	if(registro.size() >0 && registro.get(i).isConfirmado()) {
+	    if (registro.size() >0) {
+	    	for (int i=0; i<registro.size(); i++) {
+	    		if(registro.get(i).isConfirmado()) {
 	    	
-	    		getServletContext().getRequestDispatcher("/NotificacionesContacto.jsp").forward(req,resp);
-	    	}
-	    	else {
-
-	    		getServletContext().getRequestDispatcher("/NotificacionesNoContacto.jsp").forward(req,resp);
+	    			getServletContext().getRequestDispatcher("/NotificacionesContacto.jsp").forward(req,resp);
+	    		}
+	    		else { 
+	    			getServletContext().getRequestDispatcher("/NotificacionesNoContacto.jsp").forward(req,resp);
+	    		}
 	    	}
 	    }
+	    else {
+
+	    	getServletContext().getRequestDispatcher("/NotificacionesNoContacto.jsp").forward(req,resp);
+	    	}
+	    
     }
 
 }
