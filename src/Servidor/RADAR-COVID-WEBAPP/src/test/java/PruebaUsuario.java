@@ -5,9 +5,7 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import es.upm.dit.isst.radar.dao.RegistroInfectadosDAOImplementation;
 import es.upm.dit.isst.radar.dao.UsuarioDAOImplementation;
-import es.upm.dit.isst.radar.model.RegistroInfectados;
 import es.upm.dit.isst.radar.model.Usuario;
 
 class PruebaUsuario {

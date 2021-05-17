@@ -5,11 +5,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
 import es.upm.dit.isst.radar.dao.RegistroInfectadosDAOImplementation;
-import es.upm.dit.isst.radar.dao.UsuarioDAOImplementation;
 import es.upm.dit.isst.radar.model.RegistroInfectados;
 
 class PruebaRegistroInf {
@@ -37,15 +35,14 @@ class PruebaRegistroInf {
 		RegistroInfectados r3 = new RegistroInfectados();
 		Date fecha = new Date();
 		DateFormat hourdateFormat = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
-		r3.setFecha(hourdateFormat.format(fecha));
+		//r3.setFecha(hourdateFormat.format(fecha));
 		r3.setClave("clave1");
 		r3.setConfirmado(true);
 		r3.setDNI("11123344A");
 		RegistroInfectadosDAOImplementation.getInstance().create(r3);
 		
 		RegistroInfectados r4 = new RegistroInfectados();
-		DateFormat hourdateFormat1 = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
-		r4.setFecha(hourdateFormat1.format(fecha));
+		//r4.setFecha(hourdateFormat.format(fecha));
 		r4.setConfirmado(false);
 		r4.setDNI("11123344B");
 		RegistroInfectadosDAOImplementation.getInstance().create(r4);
