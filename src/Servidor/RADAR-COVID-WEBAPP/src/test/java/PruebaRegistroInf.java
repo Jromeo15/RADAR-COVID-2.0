@@ -33,16 +33,19 @@ class PruebaRegistroInf {
 	@Test
 	void testReadAll() {
 		RegistroInfectados r3 = new RegistroInfectados();
-		Date fecha = new Date();
+		Date fecha2 = new Date();
 		DateFormat hourdateFormat = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
-		//r3.setFecha(hourdateFormat.format(fecha));
+		r3.setFecha(hourdateFormat.format(fecha2));
 		r3.setClave("clave1");
 		r3.setConfirmado(true);
 		r3.setDNI("11123344A");
 		RegistroInfectadosDAOImplementation.getInstance().create(r3);
 		
 		RegistroInfectados r4 = new RegistroInfectados();
-		//r4.setFecha(hourdateFormat.format(fecha));
+		Date fecha3 = new Date();
+		DateFormat hourdateFormat1 = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
+		r4.setFecha(hourdateFormat1.format(fecha3));
+		r3.setClave("clave2");
 		r4.setConfirmado(false);
 		r4.setDNI("11123344B");
 		RegistroInfectadosDAOImplementation.getInstance().create(r4);
@@ -58,10 +61,10 @@ class PruebaRegistroInf {
 	@Test
 	void testDelete() {
 		RegistroInfectados r5 = new RegistroInfectados();
-		Date fecha = new Date();
+		Date fecha4 = new Date();
 		DateFormat hourdateFormat = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
-		r5.setFecha(hourdateFormat.format(fecha));
-		r5.setClave("clave1");
+		r5.setFecha(hourdateFormat.format(fecha4));
+		r5.setClave("clave3");
 		r5.setConfirmado(true);
 		r5.setDNI("11123344A");
 		RegistroInfectadosDAOImplementation.getInstance().create(r5);
