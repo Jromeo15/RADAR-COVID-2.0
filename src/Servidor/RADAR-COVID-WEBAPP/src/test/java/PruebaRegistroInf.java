@@ -45,7 +45,7 @@ class PruebaRegistroInf {
 		Date fecha3 = new Date();
 		DateFormat hourdateFormat1 = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
 		r4.setFecha(hourdateFormat1.format(fecha3));
-		r3.setClave("clave2");
+		r4.setClave("clave2");
 		r4.setConfirmado(false);
 		r4.setDNI("11123344B");
 		RegistroInfectadosDAOImplementation.getInstance().create(r4);
