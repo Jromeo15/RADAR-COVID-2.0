@@ -47,7 +47,6 @@ class PruebaUsuario {
 		
 	@Test
 	void testReadAll() {
-		UsuarioDAOImplementation.getInstance().deleteAll();
 		Usuario u5 = new Usuario();
 		u5.setEmail("c@c.c");
 		u5.setPassword("contrasena2");
@@ -63,8 +62,8 @@ class PruebaUsuario {
 		UsuarioDAOImplementation.getInstance().create(u6);
 		
 		List<Usuario> lista = UsuarioDAOImplementation.getInstance().readAll();
-		assertEquals(lista.get(0).getDNI(),u5.getDNI());
-		assertEquals(lista.get(1).getDNI(),u6.getDNI());
+		assertEquals(lista.get(lista.size()-2).getDNI(),u5.getDNI());
+		assertEquals(lista.get(lista.size()-1).getDNI(),u6.getDNI());
 		
 		UsuarioDAOImplementation.getInstance().delete(u5);
 		UsuarioDAOImplementation.getInstance().delete(u6);

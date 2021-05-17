@@ -14,7 +14,6 @@ class PruebaRegistroInf {
 	
 	@Test
 	void testCreate() {
-		RegistroInfectadosDAOImplementation.getInstance().deleteAll();
 		RegistroInfectados r = new RegistroInfectados();
 		Date fecha = new Date();
 		r.setFecha(fecha);
@@ -32,7 +31,6 @@ class PruebaRegistroInf {
 	
 	@Test
 	void testReadAll() {
-		RegistroInfectadosDAOImplementation.getInstance().deleteAll();
 		RegistroInfectados r3 = new RegistroInfectados();
 		Date fecha = new Date();
 		r3.setFecha(fecha);
@@ -49,8 +47,8 @@ class PruebaRegistroInf {
 		RegistroInfectadosDAOImplementation.getInstance().create(r4);
 		
 		List<RegistroInfectados> lista = RegistroInfectadosDAOImplementation.getInstance().readAll();
-		assertEquals(lista.get(0).getClave(),r3.getClave());
-		assertEquals(lista.get(1).getClave(),r4.getClave());
+		assertEquals(lista.get(lista.size()-2).getClave(),r3.getClave());
+		assertEquals(lista.get(lista.size()-1).getClave(),r4.getClave());
 		
 		RegistroInfectadosDAOImplementation.getInstance().delete(r3);
 		RegistroInfectadosDAOImplementation.getInstance().delete(r4);

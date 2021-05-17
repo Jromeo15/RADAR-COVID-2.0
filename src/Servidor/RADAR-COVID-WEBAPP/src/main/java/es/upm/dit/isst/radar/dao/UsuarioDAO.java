@@ -15,6 +15,5 @@ public interface UsuarioDAO {
 	public Usuario delete(Usuario usuario);
 	public List<Usuario> readAll();
 	public Usuario loginUsuario(String DNI, String password);
-	public void deleteAll();
 
 }
