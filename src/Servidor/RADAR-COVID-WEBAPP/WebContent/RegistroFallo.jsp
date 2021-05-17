@@ -37,7 +37,8 @@
                         <h6 style="text-align:left">*El DNI tiene debe contener 8 números y una letra</h6>   
                         <h6 style="text-align:left">*La contraseña debe de tener longitud mínima de 8 y máxima de 16</h6> 
                         <p></p>
-                        
+                        <h5 style="text-align:left">Para leer los términos y condiciones de servicio pinche <a href="TyC.jsp">aquí</a>.</h5>
+                        <p></p>
                         
 						
                         <button class="boton">REGISTRARME</button>

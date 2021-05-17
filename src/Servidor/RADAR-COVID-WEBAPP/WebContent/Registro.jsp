@@ -31,13 +31,13 @@
                         <p>Introduce tu DNI* <input type="text" id="DNI" name="DNI" placeholder="Introduzca su DNI" maxlength="9"></input></p>     
                                       
                         <p class="margen2">Crea tu contraseña* <input type="password" id="password" name="password" placeholder="Introduzca una contraseña"></input></p>
-                        <p class="margen4">Correo electrónico <input type="email" id="email" name="email" placeholder="Introduzca su email"></input></p>
+                        <p class="margen3">Correo electrónico <input type="email" id="email" name="email" placeholder="Introduzca su email"></input></p>
                         <p class="margen4">Ministerio<input type = "checkbox" name = "ministerio"  value="true"></input></p>
-                        <h6 style="text-align:left">*El DNI tiene debe contener 8 números y una letra</h6>   
-                        <h6 style="text-align:left">*La contraseña debe de tener longitud mínima de 8 y máxima de 16</h6> 
+                        <h5 style="text-align:left">*El DNI tiene debe contener 8 números y una letra</h5>   
+                        <h5 style="text-align:left">*La contraseña debe de tener longitud mínima de 8 y máxima de 16</h5> 
                         <p></p>
-                        
-                        
+                        <h5 style="text-align:left">Para leer los términos y condiciones de servicio pinche <a href="TyC.jsp">aquí</a>.</h5>
+                        <p></p>
 						
                         <button class="boton">REGISTRARME</button>
                         
