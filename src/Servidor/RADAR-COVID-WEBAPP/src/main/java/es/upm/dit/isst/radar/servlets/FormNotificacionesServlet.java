@@ -36,6 +36,7 @@ public class FormNotificacionesServlet extends HttpServlet {
 		byte[] array = new byte[16];
 	    new Random().nextBytes(array);
 	    String clave = new String(array, Charset.forName("UTF-8"));
+	    boolean contacto = false;
 	    
 	    List<RegistroInfectados> registro = RegistroInfectadosDAOImplementation.getInstance().readAll();
 	    
@@ -44,19 +45,21 @@ public class FormNotificacionesServlet extends HttpServlet {
 	    if (registro.size() >0) {
 	    	for (int i=0; i<registro.size(); i++) {
 	    		if(registro.get(i).isConfirmado()) {
-	    	
+	    			contacto= true;
+	    		}
+	    	}
+	    		if (contacto) {
 	    			getServletContext().getRequestDispatcher("/NotificacionesContacto.jsp").forward(req,resp);
 	    		}
 	    		else { 
 	    			getServletContext().getRequestDispatcher("/NotificacionesNoContacto.jsp").forward(req,resp);
 	    		}
-	    	}
+	    	
 	    }
 	    else {
 
 	    	getServletContext().getRequestDispatcher("/NotificacionesNoContacto.jsp").forward(req,resp);
 	    	}
-	    
     }
 
 }

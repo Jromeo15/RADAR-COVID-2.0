@@ -2,6 +2,8 @@ package es.upm.dit.isst.radar.servlets;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
@@ -11,13 +13,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.core.GenericType;
-import javax.ws.rs.core.MediaType;
-
-import org.glassfish.jersey.client.ClientConfig;
-
 import es.upm.dit.isst.radar.model.*;
 import es.upm.dit.isst.radar.dao.*;
 
@@ -37,8 +32,10 @@ public class FormEnviarReporteServlet extends HttpServlet {
         
 		String DNI = usuario.getDNI();
 		Date fecha = new Date();
+		DateFormat hourdateFormat = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
+		String comentarios= req.getParameter("comentarios");
 		
-		 String banco = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+		String banco = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
 		
 		String clave = "";
         for (int x = 0; x < 15; x++) {
@@ -52,8 +49,9 @@ public class FormEnviarReporteServlet extends HttpServlet {
 	    
 	    registro.setClave(clave);
 	    registro.setDNI(DNI);
-	    registro.setFecha(fecha);
+	    registro.setFecha(hourdateFormat.format(fecha));
 	    registro.setConfirmado(false);
+	    registro.setComentarios(comentarios);
 	    
 	    RegistroInfectadosDAOImplementation.getInstance().create(registro);
 		

@@ -24,7 +24,7 @@
 <div class="insertar">
     <p class="spacer"></p>
 <form action="FormConfirmarReporteServlet">
-		<button type="submit" class="boton">CONFIRMAR UN REPORTE</button>
+		<button type="submit" class="boton">REPORTES ENVIADOS</button>
 </form>
 <p class="spacer"></p>
 <form action="FormCambiaPagina4Servlet">

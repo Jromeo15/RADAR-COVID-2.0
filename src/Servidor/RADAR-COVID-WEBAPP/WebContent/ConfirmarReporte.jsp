@@ -27,13 +27,9 @@
 <th>Clave</th>
 <th>Fecha</th>
 <th>Confirmado</th>
-<c:forEach items="${registros}" var="registroi">
-<c:if test="${registroi.confirmado == false}">
-<th>Confirmar</th>
-</c:if> 
-</c:forEach>
 <th>Denegar</th>
-
+<th>Comentarios</th>
+<th>Confirmar</th>
 </tr>
 
 <c:forEach items="${registros}" var="registroi">
@@ -43,6 +39,19 @@
 <td>${registroi.clave}</td>
 <td>${registroi.fecha}</td>
 <td>${registroi.confirmado}</td>
+
+
+<td>
+<form action="FormDenegarServlet">
+		<input type="hidden" name="registroclave" value="${registroi.clave}" />
+		<button type="submit">Denegar</button>
+</form>
+<td>
+<form action="FormCambiaPagina6Servlet">
+		<input type="hidden" name="comentarios" value="${registroi.comentarios}" />
+		<button type="submit">Ver comentarios</button>
+</form>
+</td>
 <c:if test="${registroi.confirmado == false}">
 <td>
 <form action="FormConfirmacionServlet">
@@ -51,13 +60,6 @@
 </form>
 </td>
 </c:if> 
-<td>
-<form action="FormDenegarServlet">
-		<input type="hidden" name="registroclave" value="${registroi.clave}" />
-		<button type="submit">Denegar</button>
-</form>
-</td>
-
 </tr>
 </c:forEach>
 </table>

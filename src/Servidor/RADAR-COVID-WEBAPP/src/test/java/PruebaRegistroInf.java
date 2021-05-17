@@ -1,5 +1,7 @@
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -16,7 +18,8 @@ class PruebaRegistroInf {
 	void testCreate() {
 		RegistroInfectados r = new RegistroInfectados();
 		Date fecha = new Date();
-		r.setFecha(fecha);
+		DateFormat hourdateFormat = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
+		r.setFecha(hourdateFormat.format(fecha));
 		r.setClave("clave");
 		r.setConfirmado(true);
 		r.setDNI("11123344A");
@@ -33,15 +36,16 @@ class PruebaRegistroInf {
 	void testReadAll() {
 		RegistroInfectados r3 = new RegistroInfectados();
 		Date fecha = new Date();
-		r3.setFecha(fecha);
+		DateFormat hourdateFormat = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
+		r3.setFecha(hourdateFormat.format(fecha));
 		r3.setClave("clave1");
 		r3.setConfirmado(true);
 		r3.setDNI("11123344A");
 		RegistroInfectadosDAOImplementation.getInstance().create(r3);
 		
 		RegistroInfectados r4 = new RegistroInfectados();
-		r4.setFecha(fecha);
-		r4.setClave("clave2");
+		DateFormat hourdateFormat1 = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
+		r4.setFecha(hourdateFormat1.format(fecha));
 		r4.setConfirmado(false);
 		r4.setDNI("11123344B");
 		RegistroInfectadosDAOImplementation.getInstance().create(r4);
@@ -58,7 +62,8 @@ class PruebaRegistroInf {
 	void testDelete() {
 		RegistroInfectados r5 = new RegistroInfectados();
 		Date fecha = new Date();
-		r5.setFecha(fecha);
+		DateFormat hourdateFormat = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
+		r5.setFecha(hourdateFormat.format(fecha));
 		r5.setClave("clave1");
 		r5.setConfirmado(true);
 		r5.setDNI("11123344A");

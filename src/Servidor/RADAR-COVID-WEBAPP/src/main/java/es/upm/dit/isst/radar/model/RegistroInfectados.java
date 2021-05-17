@@ -12,11 +12,12 @@ public class RegistroInfectados {
 
 	private static final long serialVersionUID = 1L;
 	
-	private Date Fecha;
+	private String Fecha;
 	@Id
 	private String Clave;
 	private String DNI;
 	private boolean confirmado;
+	private String comentarios;
 	
 
 	public boolean isConfirmado() {
@@ -31,11 +32,11 @@ public class RegistroInfectados {
 		super();
 	}
 
-	public Date getFecha() {
+	public String getFecha() {
 		return Fecha;
 	}
 
-	public void setFecha(Date fecha) {
+	public void setFecha(String fecha) {
 		Fecha = fecha;
 	}
 
@@ -61,7 +62,13 @@ public class RegistroInfectados {
 				+ "]";
 	}
 
-	
+	public String getComentarios() {
+		return comentarios;
+	}
+
+	public void setComentarios(String Comentarios) {
+		comentarios = Comentarios;
+	}
 	
 
 	

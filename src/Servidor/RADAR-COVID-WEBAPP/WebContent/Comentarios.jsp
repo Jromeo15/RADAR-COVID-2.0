@@ -7,38 +7,36 @@
 <head>
 <link href="<c:url value="App.css" />" rel="stylesheet">
 <meta charset="ISO-8859-1">
-<title>Notificaciones</title>
+<title>Bienvenido Usuario</title>
 </head>
 <body>
+
 <div class="MenuPrincipal">
 <div class="body">
 
  <div class="title">
     <div class="titulo"><h1>Radar COVID</h1></div>
     <p class="spacer"></p>
-    <div class="titulillo"><h2>Enviar reporte</h2></div>
+    <div class="titulillo"><h2>Comentarios</h2></div>
     <p class="spacer"></p>
 </div>
-
-<div class="insertar">
-    <p class="spacer"></p>
-<form action="FormEnviarReporteServlet">
-Escriba aquí cualquier información que quiera aportar al reporte.
-	<input type="text" id ="comentarios" name="comentarios"> 
-	<p></p>
-	<button type="submit" class="boton">ENVIAR</button>
+<div class="registro">
+     <div class="insertar">
+     <p class="spacer"></p>
+     <p>Comentarios enviados por el usuario:</p>
+     <fieldset>
+     <p>${comentarios}</p>
+     </fieldset>
+     </div>
+     </div>
+	 <p></p>
+<form action="FormConfirmarReporteServlet">
+		<button type="submit" class="boton">VOLVER</button>
 </form>
-<p class="spacer"></p>
-<form action="FormCambiaPagina3Servlet">
-		<button type="submit" class="boton">MENÚ</button>
-</form>
-<p class="spacer"></p>
+
 
 </div>
 </div>
-</div>
-
-
 
 </body>
 </html>
